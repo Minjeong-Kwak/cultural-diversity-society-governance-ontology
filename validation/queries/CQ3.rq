@@ -1,0 +1,16 @@
+# CQ3 On what basis is each curated category aligned with source categories?
+# Retrieves: alignment relation, source category or statement, statement type, evidence record.
+PREFIX cdsg: <https://w3id.org/cdsg/core#>
+PREFIX ana: <https://w3id.org/cdsg/analytics#>
+SELECT ?curated ?relation ?source ?statement ?statementType ?evidence WHERE {
+  ?alignment a ana:TargetCategoryAlignmentAssertion ; ana:alignmentCuratedCategory ?curated ;
+             ana:alignmentRelation ?relation ; ana:alignmentSource ?source .
+  OPTIONAL { ?alignment ana:alignmentEvidence ?evidence }
+  { ?source a cdsg:PolicyTargetCategoryStatement . BIND(?source AS ?statement) }
+  UNION
+  { ?statement cdsg:definesTargetCategory|cdsg:constitutesTargetCategory|cdsg:operationalizesTargetCategory ?source }
+  VALUES ?statementType { cdsg:NormativeTargetCategoryDefinition cdsg:StatisticalTargetCategoryDefinition cdsg:TargetCategoryConstitutionRule
+                          cdsg:TargetCategoryOperationalization cdsg:TargetPopulationOperationalizationStatement
+                          cdsg:TargetCategoryClassificationSchemeStatement cdsg:TargetCategoryTerminologyStatement }
+  ?statement a ?statementType .
+} ORDER BY ?curated ?relation ?source

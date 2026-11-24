@@ -1,0 +1,27 @@
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix cdsg: <https://w3id.org/cdsg/core#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/cdsg/shapes/actor-jurisdiction/GovernmentPostShape> a sh:NodeShape ;
+    sh:targetClass cdsg:GovernmentPost .
+
+<https://w3id.org/cdsg/shapes/actor-jurisdiction/InstitutionalActorShape> a sh:NodeShape ;
+    sh:property [ sh:message "Institutional actors should have identity evidence when source evidence is available." ;
+            sh:minCount 1 ;
+            sh:path cdsg:hasIdentityEvidence ;
+            sh:severity sh:Warning ] ;
+    sh:targetClass cdsg:InstitutionalActor .
+
+<https://w3id.org/cdsg/shapes/actor-jurisdiction/JurisdictionShape> a sh:NodeShape ;
+    sh:property [ sh:class skos:Concept ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path cdsg:hasJurisdictionLevel ] ;
+    sh:targetClass cdsg:Jurisdiction .
+
+
+<https://w3id.org/cdsg/shapes/actor-jurisdiction/> a owl:Ontology ;
+    owl:versionIRI <https://w3id.org/cdsg/shapes/actor-jurisdiction/1.0.0-rc.2> ;
+    owl:versionInfo "1.0.0-rc.2" .

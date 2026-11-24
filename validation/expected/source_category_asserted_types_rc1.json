@@ -1,0 +1,56 @@
+{
+ "https://w3id.org/cdsg/resource/target/source/category-1ddcfa9a": [
+  "NormativelyDefinedPolicyTargetCategory"
+ ],
+ "https://w3id.org/cdsg/resource/target/source/category-2122a081": [
+  "NormativelyDefinedPolicyTargetCategory"
+ ],
+ "https://w3id.org/cdsg/resource/target/source/category-8e52d503": [
+  "NormativelyDefinedPolicyTargetCategory"
+ ],
+ "https://w3id.org/cdsg/resource/target/source/category-902bc5c6": [
+  "NormativelyDefinedPolicyTargetCategory"
+ ],
+ "https://w3id.org/cdsg/resource/target/source/category-b02a5ef0": [
+  "NormativelyDefinedPolicyTargetCategory"
+ ],
+ "https://w3id.org/cdsg/resource/target/source/category-b17fa6b6": [
+  "NormativelyDefinedPolicyTargetCategory"
+ ],
+ "https://w3id.org/cdsg/resource/target/source/category-b6df36bc": [
+  "NormativelyDefinedPolicyTargetCategory"
+ ],
+ "https://w3id.org/cdsg/resource/target/source/category-c224e635": [
+  "NormativelyDefinedPolicyTargetCategory"
+ ],
+ "https://w3id.org/cdsg/resource/target/source/category-d40cc683": [
+  "NormativelyDefinedPolicyTargetCategory"
+ ],
+ "https://w3id.org/cdsg/resource/target/source/category-dd6fa091": [
+  "NormativelyDefinedPolicyTargetCategory"
+ ],
+ "https://w3id.org/cdsg/resource/target/source/category-e24c0eba": [
+  "NormativelyDefinedPolicyTargetCategory"
+ ],
+ "https://w3id.org/cdsg/resource/target/source/category-e836684f": [
+  "NormativelyDefinedPolicyTargetCategory"
+ ],
+ "https://w3id.org/cdsg/resource/target/source/category-ee4f68c7": [
+  "NormativelyDefinedPolicyTargetCategory"
+ ],
+ "https://w3id.org/cdsg/resource/target/source/category-f229de55": [
+  "NormativelyConstitutedPolicyTargetCategory"
+ ],
+ "https://w3id.org/cdsg/resource/target/source/category-4c71322b": [
+  "NormativelyConstitutedPolicyTargetCategory"
+ ],
+ "https://w3id.org/cdsg/resource/target/source/category-b17f3313": [
+  "NormativelyConstitutedPolicyTargetCategory"
+ ],
+ "https://w3id.org/cdsg/resource/target/source/category-122140b8": [
+  "StatisticallyDefinedPolicyTargetCategory"
+ ],
+ "https://w3id.org/cdsg/resource/target/source/category-d0619146": [
+  "OperationalizedPolicyTargetCategory"
+ ]
+}

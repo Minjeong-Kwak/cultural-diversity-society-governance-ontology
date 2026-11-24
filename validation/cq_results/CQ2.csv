@@ -1,0 +1,6 @@
+outcome,validity,categories,endedByDocuments,endDates
+https://w3id.org/cdsg/vocab#sourcing-outcome/context-statement-only,,2,,
+https://w3id.org/cdsg/vocab#sourcing-outcome/membership-specified,https://w3id.org/cdsg/vocab#source-validity/in-force,8,,
+https://w3id.org/cdsg/vocab#sourcing-outcome/membership-specified,https://w3id.org/cdsg/vocab#source-validity/no-longer-in-force,1,https://w3id.org/cdsg/resource/us/ExecutiveOrder_7b601959,2025-03-01T00:00:00
+https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified,,225,,
+https://w3id.org/cdsg/vocab#sourcing-outcome/related-source-category-only,https://w3id.org/cdsg/vocab#source-validity/not-assessed,6,,

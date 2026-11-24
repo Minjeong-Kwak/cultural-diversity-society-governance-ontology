@@ -1,0 +1,139 @@
+@prefix ana: <https://w3id.org/cdsg/analytics#> .
+@prefix cdsg: <https://w3id.org/cdsg/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+
+<https://w3id.org/cdsg/quarantine/validation/alpha9> a owl:Ontology ;
+    owl:versionInfo "1.0.0-alpha.9" .
+
+<https://w3id.org/cdsg/quarantine/validation/legacy-derivation-note> rdfs:comment "Since rc.2 the prov:wasDerivedFrom links of active resources to pre-release identifiers that are not published in any release are kept here for traceability. They were removed from the active graph because those identifiers dereference to nothing."@en .
+
+<https://w3id.org/cdsg/resource/alignment/target-3ea24b8d> a ana:TargetCategoryAlignmentAssertion ;
+    dcterms:description "Quarantined on 2026-10-12: the Equality Act defines the protected characteristic race, not an ethnic-minority population, so the source does not support an alignment to the curated category."@en ;
+    skos:note "Equality Act defines the protected characteristic “race” and its components; it does not define one ethnic-minority population class."@en ;
+    ana:alignmentCuratedCategory <https://w3id.org/cdsg/resource/uk/ConstitutedPolicyTarget_661ab5c0> ;
+    ana:alignmentEvidence <https://w3id.org/cdsg/resource/evidence/SourceEvidence_293cfd79> ;
+    ana:alignmentRelation <https://w3id.org/cdsg/vocab#target-alignment/needs-review> ;
+    ana:alignmentSource <https://w3id.org/cdsg/resource/uk/CategoryDefinition_3ea24b8d> .
+
+<https://w3id.org/cdsg/resource/alignment/target-d99ed76f> a ana:TargetCategoryAlignmentAssertion ;
+    dcterms:description "Quarantined on 2026-10-12: the alignment was already marked invalid-legacy-link; the source statement does not define the curated category."@en ;
+    skos:note "SPD-15 defines a federal race/ethnicity classification scheme; it does not define “general public in the United States”."@en ;
+    ana:alignmentCuratedCategory <https://w3id.org/cdsg/resource/us/ConstitutedPolicyTarget_016b424f> ;
+    ana:alignmentEvidence <https://w3id.org/cdsg/resource/evidence/SourceEvidence_b5c24c87> ;
+    ana:alignmentRelation <https://w3id.org/cdsg/vocab#target-alignment/invalid-legacy-link> ;
+    ana:alignmentSource <https://w3id.org/cdsg/resource/us/CategoryDefinition_d99ed76f> .
+
+<https://w3id.org/cdsg/resource/alignment/target-f229de55> a ana:TargetCategoryAlignmentAssertion ;
+    dcterms:description "Quarantined on 2026-10-12: the alignment was already marked invalid-legacy-link; the source statement does not define the curated category."@en ;
+    skos:note "Nationality Act article 2 concerns nationality by birth, not naturalization; the legacy link to naturalized citizens was erroneous."@en ;
+    ana:alignmentCuratedCategory <https://w3id.org/cdsg/resource/kr/ConstitutedPolicyTarget_ccf545fd> ;
+    ana:alignmentEvidence <https://w3id.org/cdsg/resource/evidence/SourceEvidence_8557e9f0> ;
+    ana:alignmentRelation <https://w3id.org/cdsg/vocab#target-alignment/invalid-legacy-link> ;
+    ana:alignmentSource <https://w3id.org/cdsg/resource/target/source/category-f229de55> .
+
+<https://w3id.org/cdsg/resource/legal/NormativeBasisAssertion_3c7b4d63e5f3> a cdsg:NormativeBasisAssertion ;
+    dcterms:description "Quarantined in alpha.9: legacy document-level normative-basis relation lacks a provenance-bearing source locator or excerpt sufficient to support the formal assertion."@en ;
+    prov:wasDerivedFrom <https://w3id.org/cdsg/resource/kr/AnnualImplementationPlan_1d69bf52>,
+        <https://w3id.org/cdsg/resource/kr/Statute_fc595eef> ;
+    cdsg:assertsNormativeBasisFor <https://w3id.org/cdsg/resource/kr/AnnualImplementationPlan_1d69bf52> ;
+    cdsg:assertsNormativeBasisForDocument <https://w3id.org/cdsg/resource/kr/AnnualImplementationPlan_1d69bf52> ;
+    cdsg:citesNormativeDocument <https://w3id.org/cdsg/resource/kr/Statute_fc595eef> .
+
+<https://w3id.org/cdsg/resource/legal/NormativeBasisAssertion_4197ea85d0da> a cdsg:NormativeBasisAssertion ;
+    dcterms:description "Quarantined in alpha.9: legacy document-level normative-basis relation lacks a provenance-bearing source locator or excerpt sufficient to support the formal assertion."@en ;
+    prov:wasDerivedFrom <https://w3id.org/cdsg/resource/kr/AnnualImplementationPlan_64dda513>,
+        <https://w3id.org/cdsg/resource/kr/Statute_4967e23b> ;
+    cdsg:assertsNormativeBasisFor <https://w3id.org/cdsg/resource/kr/AnnualImplementationPlan_64dda513> ;
+    cdsg:assertsNormativeBasisForDocument <https://w3id.org/cdsg/resource/kr/AnnualImplementationPlan_64dda513> ;
+    cdsg:citesNormativeDocument <https://w3id.org/cdsg/resource/kr/Statute_4967e23b> .
+
+<https://w3id.org/cdsg/resource/legal/NormativeBasisAssertion_8576ac513842> a cdsg:NormativeBasisAssertion ;
+    dcterms:description "Quarantined in alpha.9: legacy document-level normative-basis relation lacks a provenance-bearing source locator or excerpt sufficient to support the formal assertion."@en ;
+    prov:wasDerivedFrom <https://w3id.org/cdsg/resource/de/IndicatorReport_d5e31b6a>,
+        <https://w3id.org/cdsg/resource/de/Statute_9443fd91> ;
+    cdsg:assertsNormativeBasisFor <https://w3id.org/cdsg/resource/de/IndicatorReport_d5e31b6a> ;
+    cdsg:assertsNormativeBasisForDocument <https://w3id.org/cdsg/resource/de/IndicatorReport_d5e31b6a> ;
+    cdsg:citesNormativeDocument <https://w3id.org/cdsg/resource/de/Statute_9443fd91> .
+
+<https://w3id.org/cdsg/resource/legal/NormativeBasisAssertion_85f850813939> a cdsg:NormativeBasisAssertion ;
+    dcterms:description "Quarantined in alpha.9: legacy document-level normative-basis relation lacks a provenance-bearing source locator or excerpt sufficient to support the formal assertion."@en ;
+    prov:wasDerivedFrom <https://w3id.org/cdsg/resource/kr/MasterPlan_cc724c34>,
+        <https://w3id.org/cdsg/resource/kr/Statute_4967e23b> ;
+    cdsg:assertsNormativeBasisFor <https://w3id.org/cdsg/resource/kr/MasterPlan_cc724c34> ;
+    cdsg:assertsNormativeBasisForDocument <https://w3id.org/cdsg/resource/kr/MasterPlan_cc724c34> ;
+    cdsg:citesNormativeDocument <https://w3id.org/cdsg/resource/kr/Statute_4967e23b> .
+
+<https://w3id.org/cdsg/resource/legal/NormativeBasisAssertion_ad275ddc1687> a cdsg:NormativeBasisAssertion ;
+    dcterms:description "Quarantined in alpha.9: legacy document-level normative-basis relation lacks a provenance-bearing source locator or excerpt sufficient to support the formal assertion."@en ;
+    prov:wasDerivedFrom <https://w3id.org/cdsg/resource/ca/AnnualReport_1ea6a0d2>,
+        <https://w3id.org/cdsg/resource/ca/Statute_7caa7dfa> ;
+    cdsg:assertsNormativeBasisFor <https://w3id.org/cdsg/resource/ca/AnnualReport_1ea6a0d2> ;
+    cdsg:assertsNormativeBasisForDocument <https://w3id.org/cdsg/resource/ca/AnnualReport_1ea6a0d2> ;
+    cdsg:citesNormativeDocument <https://w3id.org/cdsg/resource/ca/Statute_7caa7dfa> .
+
+<https://w3id.org/cdsg/resource/legal/NormativeBasisAssertion_de491797e9a1> a cdsg:NormativeBasisAssertion ;
+    dcterms:description "Quarantined in alpha.9: legacy document-level normative-basis relation lacks a provenance-bearing source locator or excerpt sufficient to support the formal assertion."@en ;
+    prov:wasDerivedFrom <https://w3id.org/cdsg/resource/fr/ParliamentaryReport_d8cf4d44>,
+        <https://w3id.org/cdsg/resource/fr/Statute_06eec972> ;
+    cdsg:assertsNormativeBasisFor <https://w3id.org/cdsg/resource/fr/ParliamentaryReport_d8cf4d44> ;
+    cdsg:assertsNormativeBasisForDocument <https://w3id.org/cdsg/resource/fr/ParliamentaryReport_d8cf4d44> ;
+    cdsg:citesNormativeDocument <https://w3id.org/cdsg/resource/fr/Statute_06eec972> .
+
+<https://w3id.org/cdsg/resource/legal/NormativeBasisAssertion_eb38a8b50d80> a cdsg:NormativeBasisAssertion ;
+    dcterms:description "Quarantined in alpha.9: legacy document-level normative-basis relation lacks a provenance-bearing source locator or excerpt sufficient to support the formal assertion."@en ;
+    prov:wasDerivedFrom <https://w3id.org/cdsg/resource/kr/MasterPlan_0a685f35>,
+        <https://w3id.org/cdsg/resource/kr/Statute_fc595eef> ;
+    cdsg:assertsNormativeBasisFor <https://w3id.org/cdsg/resource/kr/MasterPlan_0a685f35> ;
+    cdsg:assertsNormativeBasisForDocument <https://w3id.org/cdsg/resource/kr/MasterPlan_0a685f35> ;
+    cdsg:citesNormativeDocument <https://w3id.org/cdsg/resource/kr/Statute_fc595eef> .
+
+<https://w3id.org/cdsg/resource/temporal/TemporalQualification_0e879ed6a224> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_f8016d85> .
+
+<https://w3id.org/cdsg/resource/temporal/TemporalQualification_29b6bcae3d00> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_353ebb5a> .
+
+<https://w3id.org/cdsg/resource/temporal/TemporalQualification_457a797e3a4b> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_bae28cd1> .
+
+<https://w3id.org/cdsg/resource/temporal/TemporalQualification_4c41d37c207b> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_bae28cd1> .
+
+<https://w3id.org/cdsg/resource/temporal/TemporalQualification_4ca935488678> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_b71e5541> .
+
+<https://w3id.org/cdsg/resource/temporal/TemporalQualification_519107426038> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_734f530a> .
+
+<https://w3id.org/cdsg/resource/temporal/TemporalQualification_949b4e9aed73> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_a2d5bd0a> .
+
+<https://w3id.org/cdsg/resource/temporal/TemporalQualification_9640880918f3> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_f8016d85> .
+
+<https://w3id.org/cdsg/resource/temporal/TemporalQualification_c0dc6c399db6> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_a2d5bd0a> .
+
+<https://w3id.org/cdsg/resource/temporal/TemporalQualification_c4ef93049311> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_807a1842> .
+
+<https://w3id.org/cdsg/resource/temporal/TemporalQualification_cba81a727458> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_799c1a03> .
+
+<https://w3id.org/cdsg/resource/temporal/TemporalQualification_d2103a9705f1> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_ff4047e2> .
+
+<https://w3id.org/cdsg/resource/temporal/TemporalQualification_d919b14421aa> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_bae28cd1> .
+
+<https://w3id.org/cdsg/resource/temporal/TemporalQualification_e8965d855712> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_f8016d85> .
+
+<https://w3id.org/cdsg/resource/time/Interval_353ebb5a> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_353ebb5a> .
+
+<https://w3id.org/cdsg/resource/time/Interval_734f530a> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_734f530a> .
+
+<https://w3id.org/cdsg/resource/time/Interval_799c1a03> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_799c1a03> .
+
+<https://w3id.org/cdsg/resource/time/Interval_807a1842> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_807a1842> .
+
+<https://w3id.org/cdsg/resource/time/Interval_a2d5bd0a> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_a2d5bd0a> .
+
+<https://w3id.org/cdsg/resource/time/Interval_b71e5541> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_b71e5541> .
+
+<https://w3id.org/cdsg/resource/time/Interval_bae28cd1> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_bae28cd1> .
+
+<https://w3id.org/cdsg/resource/time/Interval_f8016d85> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_f8016d85> .
+
+<https://w3id.org/cdsg/resource/time/Interval_ff4047e2> prov:wasDerivedFrom <https://w3id.org/cdsg/resource/common/TemporalScope_ff4047e2> .
+

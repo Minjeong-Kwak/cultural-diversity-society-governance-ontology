@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog" prefer="public">
+  <uri name="https://w3id.org/cdsg/core/1.0.0-rc.2" uri="../ontology/cdsg_core_v1.0.0-rc.2.owl"/>
+  <uri name="https://w3id.org/cdsg/analytics/1.0.0-rc.2" uri="../analytics/cdsg_analytics_v1.0.0-rc.2.ttl"/>
+  <uri name="https://w3id.org/cdsg/vocab/1.0.0-rc.2" uri="../vocab/cdsg_vocab_v1.0.0-rc.2.ttl"/>
+  <uri name="https://w3id.org/cdsg/data/1.0.0-rc.2" uri="../data/cdsg_data_v1.0.0-rc.2.ttl"/>
+  <uri name="http://purl.org/nemo/gufo#" uri="external/gufo.owl"/>
+  <uri name="http://purl.org/nemo/gufo#/1.0.0" uri="external/gufo.owl"/>
+</catalog>

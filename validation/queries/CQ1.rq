@@ -1,0 +1,12 @@
+# entailment: hermit
+# CQ1 On what kind of norm does each source-specified category rest?
+# Retrieves: kind of category, specifying statement, document, cited version, jurisdiction, number of evidence records.
+PREFIX cdsg: <https://w3id.org/cdsg/core#>
+SELECT ?category ?kind ?statement ?document ?version ?jurisdiction (COUNT(DISTINCT ?evidence) AS ?evidenceRecords) WHERE {
+  VALUES ?kind { cdsg:NormativelyDefinedPolicyTargetCategory cdsg:StatisticallyDefinedPolicyTargetCategory
+                 cdsg:NormativelyConstitutedPolicyTargetCategory cdsg:OperationalizedPolicyTargetCategory }
+  ?category a ?kind .
+  ?statement cdsg:definesTargetCategory|cdsg:constitutesTargetCategory|cdsg:operationalizesTargetCategory ?category ;
+             cdsg:isExpressedIn ?document ; cdsg:appliesInJurisdiction ?jurisdiction ; cdsg:hasSourceEvidence ?evidence .
+  OPTIONAL { ?evidence cdsg:evidenceDocumentVersion ?version }
+} GROUP BY ?category ?kind ?statement ?document ?version ?jurisdiction ORDER BY ?jurisdiction ?kind ?category

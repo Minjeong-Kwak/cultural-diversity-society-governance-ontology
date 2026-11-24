@@ -1,0 +1,9 @@
+dependency,version_or_revision,source,sha256,status,release_gate
+RDFLib,7.6.0,https://pypi.org/project/rdflib/,,executed,structural audit; CQ baseline
+pySHACL,0.40.1,https://pypi.org/project/pyshacl/,,executed,SHACL (CDSG and gUFO shapes)
+ROBOT,1.9.10,https://github.com/ontodev/robot/releases/tag/v1.9.10,,executed,OWL 2 DL profile; HermiT reasoning and fixtures
+Java,OpenJDK 21.0.12.1,https://openjdk.org/,,executed,runtime for ROBOT
+Python,3.13.16,https://www.python.org/,,executed,runtime for validation scripts
+gUFO,"1.0.0 (owl:versionIRI); vendored as validation/external/gufo.owl, graph-isomorphic to gufo.ttl at commit f4122544133544eb4c6c467ba316302ab20b754a",https://github.com/nemo-ufes/gufo,18b417326f439d2466862ac7d63435bfb87ac7bec385d3861044277f3d77d8e5,vendored and pinned,upper ontology import (catalog-v001.xml)
+gUFO SHACL shapes,"vendored as validation/external/gufoshapes.ttl, byte-identical to gufoshapes.ttl at commit b95e14b034c93c42323e8beb8c08f697b026e553",https://github.com/nemo-ufes/gufoshapes,b3422e20ba0babf1ec76988c42226bfab144c2be4525fada2e4a347bcc246dc3,vendored and pinned,gUFO SHACL
+Owlready2 and Pellet,not used in rc.2,https://pypi.org/project/owlready2/,,retired,replaced by HermiT via ROBOT

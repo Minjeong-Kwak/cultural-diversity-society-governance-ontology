@@ -1,0 +1,125 @@
+@prefix ana: <https://w3id.org/cdsg/analytics#> .
+@prefix cdsg: <https://w3id.org/cdsg/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix gufo: <http://purl.org/nemo/gufo#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:license a owl:AnnotationProperty .
+
+skos:definition a owl:AnnotationProperty .
+
+time:Interval a owl:Class .
+
+ana:alignmentCuratedCategory a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "alignment curated category"@en ;
+    rdfs:domain ana:TargetCategoryAlignmentAssertion ;
+    rdfs:range ana:CuratedPolicyTargetCategory ;
+    skos:definition "Identifies the curated target category involved in the alignment."@en .
+
+ana:alignmentEvidence a owl:ObjectProperty ;
+    rdfs:label "alignment evidence"@en ;
+    rdfs:domain ana:TargetCategoryAlignmentAssertion ;
+    rdfs:range cdsg:EvidenceRecord ;
+    skos:definition "Links the alignment to the documentary evidence on which the alignment judgement rests."@en .
+
+ana:alignmentRelation a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "alignment relation"@en ;
+    rdfs:domain ana:TargetCategoryAlignmentAssertion ;
+    rdfs:range skos:Concept ;
+    skos:definition "Identifies the controlled analytical relation assigned to the alignment: close, narrower-than-curated, broader-than-curated or related. The value invalid-legacy-link marks alignments withdrawn to the quarantine graph."@en .
+
+ana:alignmentSource a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "alignment source"@en ;
+    rdfs:domain ana:TargetCategoryAlignmentAssertion ;
+    rdfs:range owl:Thing ;
+    skos:definition "Identifies the source statement or source-specified category being aligned."@en .
+
+ana:assessesCuratedCategory a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "assesses curated category"@en ;
+    rdfs:domain ana:TargetCategorySourcingAssessment ;
+    rdfs:range ana:CuratedPolicyTargetCategory ;
+    skos:definition "Identifies the curated target category whose sources the assessment records."@en .
+
+ana:assessmentBasis a owl:ObjectProperty ;
+    rdfs:label "assessment basis"@en ;
+    rdfs:domain ana:TargetCategorySourcingAssessment ;
+    rdfs:range owl:Thing ;
+    skos:definition "Links the assessment to the alignment assertions, temporal qualifications, cited document versions and evidence records from which its values were determined."@en .
+
+ana:assessmentReferenceDate a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "assessment reference date"@en ;
+    rdfs:domain ana:TargetCategorySourcingAssessment ;
+    rdfs:range xsd:dateTime ;
+    skos:definition "Records the reference date of the corpus state on which the assessment is made."@en .
+
+ana:derivedFromTargetExpressionIn a owl:ObjectProperty ;
+    rdfs:label "derived from target expression in"@en ;
+    rdfs:domain ana:CuratedPolicyTargetCategory ;
+    rdfs:range cdsg:PolicyDocument ;
+    skos:definition "Identifies a policy document whose target expressions the curated category was formed to group. It records provenance of the research category, not a definition of it by that document."@en .
+
+ana:hasTargetCategoryFacet a owl:ObjectProperty ;
+    rdfs:label "has target category facet"@en ;
+    rdfs:domain ana:CuratedPolicyTargetCategory ;
+    rdfs:range skos:Concept ;
+    skos:definition "Associates a curated target category with a controlled analytical facet. The facet is descriptive metadata, not an ontological superclass."@en .
+
+ana:sourcingOutcome a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "sourcing outcome"@en ;
+    rdfs:domain ana:TargetCategorySourcingAssessment ;
+    rdfs:range skos:Concept ;
+    skos:definition "Identifies the controlled outcome of the source search for the assessed category."@en .
+
+ana:validityAtReferenceDate a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "validity at reference date"@en ;
+    rdfs:domain ana:TargetCategorySourcingAssessment ;
+    rdfs:range skos:Concept ;
+    skos:definition "Identifies whether the source that specifies membership was in force at the reference date, or that this was not assessed."@en .
+
+<https://w3id.org/cdsg/analytics/> a owl:Ontology ;
+    rdfs:label "CDSG Analytical Layer"@en ;
+    dcterms:description "Release candidate 2 analytical layer for research-curated policy profiles, concept annotations, assessment dimensions, and source-to-curated target-category alignments. Analytical resources remain distinct from core domain entities."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-10-12"^^xsd:date ;
+    dcterms:title "CDSG Analytical Layer"@en ;
+    owl:imports <https://w3id.org/cdsg/core/1.0.0-rc.2> ;
+    owl:versionIRI <https://w3id.org/cdsg/analytics/1.0.0-rc.2> ;
+    owl:versionInfo "1.0.0-rc.2" .
+
+skos:Concept a owl:Class .
+
+ana:CuratedPolicyTargetCategory a gufo:Type,
+        owl:Class ;
+    rdfs:label "curated policy target category"@en ;
+    gufo:categorizes gufo:Endurant ;
+    rdfs:subClassOf gufo:Mixin,
+        cdsg:PolicyTargetCategory ;
+    skos:definition "A research-curated policy target category used to normalize or compare source expressions across policy documents. It is not thereby asserted to be identical to a category explicitly defined or constituted by a source."@en ;
+    cdsg:designRationale "A curated category is a gufo:Mixin. It is a research grouping of target expressions within one jurisdiction, possibly from several documents, and is compared across jurisdictions through its comparison facet; it may group rigid and anti-rigid features and no source fixes its membership, so CDSG commits it only to semi-rigidity. Because gUFO makes semi-rigid and anti-rigid types disjoint, no category can be both curated and source-specified; an alignment between the two is therefore never an identity."@en .
+
+ana:TargetCategoryAlignmentAssertion a gufo:AbstractIndividualType,
+        owl:Class ;
+    rdfs:label "target category alignment assertion"@en ;
+    rdfs:subClassOf gufo:AbstractIndividual,
+        prov:Entity ;
+    skos:definition "An analytical assertion relating a source target-category statement or source-specified category to a curated target category. The alignment records a curation judgement and is deliberately weaker than owl:equivalentClass or rdfs:subClassOf."@en .
+
+ana:TargetCategorySourcingAssessment a gufo:AbstractIndividualType,
+        owl:Class ;
+    rdfs:label "target category sourcing assessment"@en ;
+    rdfs:subClassOf gufo:AbstractIndividual,
+        prov:Entity ;
+    skos:definition "An analytical record of what the research corpus shows about the sources of one curated target category at a stated reference date: whether a source statement was identified within the corpus, whether any identified statement specifies membership in that category, and whether the specifying source was in force at the reference date. It records a research judgement relative to the corpus and is not a claim that no source exists outside it."@en .
+

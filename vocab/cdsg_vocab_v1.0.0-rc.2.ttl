@@ -1,0 +1,272 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix vocab: <https://w3id.org/cdsg/vocab#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:license a owl:AnnotationProperty .
+
+skos:definition a owl:AnnotationProperty .
+
+<https://w3id.org/cdsg/vocab#actor-type/business-organization> a skos:Concept ;
+    skos:inScheme vocab:InstitutionalActorTypeScheme ;
+    skos:prefLabel "Business organization"@en .
+
+<https://w3id.org/cdsg/vocab#actor-type/civil-society-organization> a skos:Concept ;
+    skos:inScheme vocab:InstitutionalActorTypeScheme ;
+    skos:prefLabel "Civil society organization"@en .
+
+<https://w3id.org/cdsg/vocab#actor-type/community-organization> a skos:Concept ;
+    skos:inScheme vocab:InstitutionalActorTypeScheme ;
+    skos:prefLabel "Community organization"@en .
+
+<https://w3id.org/cdsg/vocab#actor-type/educational-institution> a skos:Concept ;
+    skos:inScheme vocab:InstitutionalActorTypeScheme ;
+    skos:prefLabel "Educational institution"@en .
+
+<https://w3id.org/cdsg/vocab#actor-type/faith-organization> a skos:Concept ;
+    skos:inScheme vocab:InstitutionalActorTypeScheme ;
+    skos:prefLabel "Faith organization"@en .
+
+<https://w3id.org/cdsg/vocab#actor-type/interministerial-body> a skos:Concept ;
+    skos:inScheme vocab:InstitutionalActorTypeScheme ;
+    skos:prefLabel "Interministerial body"@en .
+
+<https://w3id.org/cdsg/vocab#actor-type/international-organization> a skos:Concept ;
+    skos:inScheme vocab:InstitutionalActorTypeScheme ;
+    skos:prefLabel "International organization"@en .
+
+<https://w3id.org/cdsg/vocab#actor-type/legislature> a skos:Concept ;
+    skos:definition "A body or bodies that enact statutes or, at supranational level, adopt legislative acts."@en ;
+    skos:inScheme vocab:InstitutionalActorTypeScheme ;
+    skos:prefLabel "Legislature"@en .
+
+<https://w3id.org/cdsg/vocab#actor-type/national-government-body> a skos:Concept ;
+    skos:inScheme vocab:InstitutionalActorTypeScheme ;
+    skos:prefLabel "National government body"@en .
+
+<https://w3id.org/cdsg/vocab#actor-type/public-institution> a skos:Concept ;
+    skos:inScheme vocab:InstitutionalActorTypeScheme ;
+    skos:prefLabel "Public institution"@en .
+
+<https://w3id.org/cdsg/vocab#actor-type/research-advisory-body> a skos:Concept ;
+    skos:inScheme vocab:InstitutionalActorTypeScheme ;
+    skos:prefLabel "Research or advisory body"@en .
+
+<https://w3id.org/cdsg/vocab#actor-type/subnational-government-body> a skos:Concept ;
+    skos:inScheme vocab:InstitutionalActorTypeScheme ;
+    skos:prefLabel "Subnational government body"@en .
+
+<https://w3id.org/cdsg/vocab#document-version-kind/consolidated-text> a skos:Concept ;
+    skos:definition "A text published by an official or government consolidation service that incorporates amendments up to a stated point."@en ;
+    skos:inScheme vocab:DocumentVersionKindScheme ;
+    skos:prefLabel "consolidated text"@en .
+
+<https://w3id.org/cdsg/vocab#document-version-kind/original-text> a skos:Concept ;
+    skos:definition "The text as made, enacted, signed or first published, without later amendments incorporated."@en ;
+    skos:inScheme vocab:DocumentVersionKindScheme ;
+    skos:prefLabel "original text"@en .
+
+<https://w3id.org/cdsg/vocab#jurisdiction-level/federal> a skos:Concept ;
+    skos:inScheme vocab:JurisdictionLevelScheme ;
+    skos:prefLabel "Federal"@en .
+
+<https://w3id.org/cdsg/vocab#jurisdiction-level/national> a skos:Concept ;
+    skos:inScheme vocab:JurisdictionLevelScheme ;
+    skos:prefLabel "National"@en .
+
+<https://w3id.org/cdsg/vocab#jurisdiction-level/subnational> a skos:Concept ;
+    skos:inScheme vocab:JurisdictionLevelScheme ;
+    skos:prefLabel "Subnational"@en .
+
+<https://w3id.org/cdsg/vocab#jurisdiction-level/supranational> a skos:Concept ;
+    skos:inScheme vocab:JurisdictionLevelScheme ;
+    skos:prefLabel "Supranational"@en .
+
+<https://w3id.org/cdsg/vocab#source-validity/in-force> a skos:Concept ;
+    skos:definition "The specifying source was in force at the reference date. For a statistical definition, which carries no legal force, the issuing office still applied it at that date."@en ;
+    skos:inScheme vocab:SourceValidityStatusScheme ;
+    skos:prefLabel "in force"@en .
+
+<https://w3id.org/cdsg/vocab#source-validity/no-longer-in-force> a skos:Concept ;
+    skos:definition "The specifying source had been revoked, repealed or replaced before the reference date."@en ;
+    skos:inScheme vocab:SourceValidityStatusScheme ;
+    skos:prefLabel "no longer in force"@en .
+
+<https://w3id.org/cdsg/vocab#source-validity/not-assessed> a skos:Concept ;
+    skos:definition "The force of the specifying source at the reference date was not assessed."@en ;
+    skos:inScheme vocab:SourceValidityStatusScheme ;
+    skos:prefLabel "not assessed"@en .
+
+<https://w3id.org/cdsg/vocab#sourcing-outcome/context-statement-only> a skos:Concept ;
+    skos:definition "The corpus contains source statements about the category's classification, terminology or population operationalization, but none that specifies membership."@en ;
+    skos:inScheme vocab:TargetCategorySourcingOutcomeScheme ;
+    skos:prefLabel "context statement only"@en .
+
+<https://w3id.org/cdsg/vocab#sourcing-outcome/membership-specified> a skos:Concept ;
+    skos:definition "A source statement in the corpus defines, constitutes or operationalizes a category closely aligned with the curated category."@en ;
+    skos:inScheme vocab:TargetCategorySourcingOutcomeScheme ;
+    skos:prefLabel "membership specified by a source"@en .
+
+<https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified> a skos:Concept ;
+    skos:definition "No source statement concerning the category was identified in the corpus at the reference date."@en ;
+    skos:inScheme vocab:TargetCategorySourcingOutcomeScheme ;
+    skos:prefLabel "no source statement identified"@en .
+
+<https://w3id.org/cdsg/vocab#sourcing-outcome/related-source-category-only> a skos:Concept ;
+    skos:definition "The corpus contains source-specified categories aligned with the curated category only as broader, narrower or related, not as close."@en ;
+    skos:inScheme vocab:TargetCategorySourcingOutcomeScheme ;
+    skos:prefLabel "related source category only"@en .
+
+<https://w3id.org/cdsg/vocab#target-alignment/broader-than-curated> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryAlignmentRelationScheme ;
+    skos:prefLabel "source category broader than curated category"@en .
+
+<https://w3id.org/cdsg/vocab#target-alignment/close> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryAlignmentRelationScheme ;
+    skos:prefLabel "close alignment"@en .
+
+<https://w3id.org/cdsg/vocab#target-alignment/invalid-legacy-link> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryAlignmentRelationScheme ;
+    skos:prefLabel "invalid legacy target-definition link"@en .
+
+<https://w3id.org/cdsg/vocab#target-alignment/narrower-than-curated> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryAlignmentRelationScheme ;
+    skos:prefLabel "source category narrower than curated category"@en .
+
+<https://w3id.org/cdsg/vocab#target-alignment/needs-review> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryAlignmentRelationScheme ;
+    skos:prefLabel "mapping requires conceptual review"@en .
+
+<https://w3id.org/cdsg/vocab#target-alignment/related> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryAlignmentRelationScheme ;
+    skos:prefLabel "related but non-equivalent"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/child-or-youth-with-migration-background-population> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Children or Youth with Migration Background"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/community-target> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Community Target"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/ethnic-minority-population> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Ethnic Minority Population"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/family-or-household-target> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Family or Household Target"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/federal-contractor-target> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Federal Contractor Target"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/foreign-national-population> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Foreign National Population"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/host-society-population> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Host Society Population"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/immigration-system-target> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Immigration System Target"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/indigenous-population> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Indigenous Population"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/international-student-population> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "International Student Population"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/marriage-migrant-population> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Marriage Migrant Population"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/migrant-population> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Migrant Population"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/migrant-worker-population> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Migrant Worker Population"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/multicultural-family-target> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Multicultural Family Target"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/naturalized-citizen-population> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Naturalized Citizen Population"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/organization-target> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Organization Target"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/person-with-migration-background-population> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Population with Migration Background"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/population-group-target> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Population Group Target"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/public-sector-organization-target> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Public Sector Organization Target"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/public-service-system-target> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Public Service System Target"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/racialized-population> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Racialized Population"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/refugee-or-asylum-seeker-population> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Refugee or Asylum Seeker Population"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/religious-minority-population> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "Religious Minority Population"@en .
+
+<https://w3id.org/cdsg/vocab#target-facet/system-target> a skos:Concept ;
+    skos:inScheme vocab:TargetCategoryFacetScheme ;
+    skos:prefLabel "System Target"@en .
+
+<https://w3id.org/cdsg/vocab/> a owl:Ontology ;
+    dcterms:description "Release candidate 2 controlled-vocabulary module containing SKOS concepts used for analytical classification rather than ontological identity."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-10-12"^^xsd:date ;
+    dcterms:title "CDSG controlled vocabularies"@en ;
+    owl:versionIRI <https://w3id.org/cdsg/vocab/1.0.0-rc.2> ;
+    owl:versionInfo "1.0.0-rc.2" .
+
+vocab:DocumentVersionKindScheme a skos:ConceptScheme ;
+    skos:definition "Kinds of published text state of a normative document."@en ;
+    skos:prefLabel "document version kind scheme"@en .
+
+vocab:SourceValidityStatusScheme a skos:ConceptScheme ;
+    skos:prefLabel "Source validity status scheme"@en .
+
+vocab:JurisdictionLevelScheme a skos:ConceptScheme ;
+    skos:prefLabel "Jurisdiction level scheme"@en .
+
+vocab:TargetCategorySourcingOutcomeScheme a skos:ConceptScheme ;
+    skos:prefLabel "Target category sourcing outcome scheme"@en .
+
+vocab:TargetCategoryAlignmentRelationScheme a skos:ConceptScheme ;
+    skos:prefLabel "Target category alignment relation scheme"@en .
+
+vocab:InstitutionalActorTypeScheme a skos:ConceptScheme ;
+    skos:prefLabel "Institutional actor type scheme"@en .
+
+vocab:TargetCategoryFacetScheme a skos:ConceptScheme ;
+    skos:prefLabel "Target category facet scheme"@en .
+
+skos:Concept a owl:Class .
+

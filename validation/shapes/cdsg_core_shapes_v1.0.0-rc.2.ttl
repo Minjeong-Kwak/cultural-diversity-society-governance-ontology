@@ -1,0 +1,103 @@
+@prefix cdsg: <https://w3id.org/cdsg/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<https://w3id.org/cdsg/shapes/core/> a owl:Ontology ;
+    owl:versionIRI <https://w3id.org/cdsg/shapes/core/1.0.0-rc.2> ;
+    owl:versionInfo "1.0.0-rc.2" .
+
+<https://w3id.org/cdsg/shapes/core/EvidenceRecordShape> a sh:NodeShape ;
+    sh:property [ sh:class cdsg:PolicyDocument ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path cdsg:evidenceDocument ],
+        [ sh:maxCount 1 ;
+            sh:path cdsg:evidencePage ],
+        [ sh:minCount 1 ;
+            sh:path cdsg:sourceLocator ],
+        [ sh:minCount 1 ;
+            sh:path cdsg:evidenceText ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:path cdsg:retrievedOn ] ;
+    sh:or ( [ sh:property [ sh:minCount 1 ; sh:path cdsg:evidenceSourceFileName ], [ sh:minCount 1 ; sh:path cdsg:evidencePage ] ]
+            [ sh:property [ sh:minCount 1 ; sh:path cdsg:evidenceSourceURI ], [ sh:minCount 1 ; sh:path cdsg:retrievedOn ] ] ) ;
+    sh:message "An evidence record cites a file and page in the corpus, or a web address with its retrieval time." ;
+    sh:targetClass cdsg:EvidenceRecord .
+
+<https://w3id.org/cdsg/shapes/core/TemporalQualificationAssertionShape> a sh:NodeShape ;
+    sh:property [ sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path cdsg:temporallyQualifies ],
+        [ sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path cdsg:hasTemporalInterval ],
+        [ sh:class cdsg:EvidenceRecord ;
+            sh:minCount 1 ;
+            sh:path cdsg:hasSourceEvidence ] ;
+    sh:targetClass cdsg:TemporalQualificationAssertion .
+
+
+<https://w3id.org/cdsg/shapes/core/NormativeDocumentVersionShape> a sh:NodeShape ;
+    sh:property [ sh:class cdsg:NormativeDocument ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path cdsg:isVersionOf ],
+        [ sh:in ( <https://w3id.org/cdsg/vocab#document-version-kind/original-text> <https://w3id.org/cdsg/vocab#document-version-kind/consolidated-text> ) ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path cdsg:versionKind ],
+        [ sh:minCount 1 ;
+            sh:path cdsg:versionIdentifier ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:path cdsg:versionInForceFrom ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:path cdsg:versionCurrentTo ],
+        [ sh:class cdsg:EvidenceRecord ;
+            sh:minCount 1 ;
+            sh:path [ sh:inversePath cdsg:evidenceDocumentVersion ] ] ;
+    sh:targetClass cdsg:NormativeDocumentVersion .
+
+<https://w3id.org/cdsg/shapes/core/NormativeDocumentHasVersionShape> a sh:NodeShape ;
+    sh:property [ sh:minCount 1 ;
+            sh:path [ sh:inversePath cdsg:isVersionOf ] ;
+            sh:message "A normative document in the evidence set has no recorded version." ] ;
+    sh:targetClass cdsg:NormativeDocument .
+
+<https://w3id.org/cdsg/shapes/core/EvidenceVersionConsistencyShape> a sh:NodeShape ;
+    sh:sparql [ a sh:SPARQLConstraint ;
+            sh:message "Evidence on a normative document must name a version of that same document." ;
+            sh:select """PREFIX cdsg: <https://w3id.org/cdsg/core#>
+SELECT $this WHERE {
+  $this cdsg:evidenceDocument ?doc .
+  ?doc a cdsg:NormativeDocument .
+  FILTER NOT EXISTS { $this cdsg:evidenceDocumentVersion ?v . ?v cdsg:isVersionOf ?doc . }
+}""" ] ;
+    sh:targetClass cdsg:EvidenceRecord .
+
+<https://w3id.org/cdsg/shapes/core/DocumentSupersessionAssertionShape> a sh:NodeShape ;
+    sh:property [ sh:class cdsg:PolicyDocument ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path cdsg:supersedingDocument ],
+        [ sh:class cdsg:PolicyDocument ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path cdsg:supersededDocument ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:path cdsg:supersessionEffectiveFrom ],
+        [ sh:class cdsg:EvidenceRecord ;
+            sh:minCount 1 ;
+            sh:path cdsg:hasSourceEvidence ] ;
+    sh:sparql [ a sh:SPARQLConstraint ;
+            sh:message "A supersession assertion must name two different documents, and its evidence must come from the superseding document." ;
+            sh:select """PREFIX cdsg: <https://w3id.org/cdsg/core#>
+SELECT $this WHERE {
+  $this cdsg:supersedingDocument ?new ; cdsg:supersededDocument ?old .
+  FILTER ( ?new = ?old || EXISTS { $this cdsg:hasSourceEvidence ?e . ?e cdsg:evidenceDocument ?d . FILTER (?d != ?new) } )
+}""" ] ;
+    sh:targetClass cdsg:DocumentSupersessionAssertion .

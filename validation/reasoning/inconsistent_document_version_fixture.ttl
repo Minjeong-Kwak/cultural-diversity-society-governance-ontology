@@ -1,0 +1,3 @@
+@prefix cdsg: <https://w3id.org/cdsg/core#> .
+@prefix ex: <https://w3id.org/cdsg/test/> .
+ex:badVersion a cdsg:NormativeDocument, cdsg:NormativeDocumentVersion .

@@ -1,0 +1,20 @@
+# CQ4 What is the version and change history of the document expressing each source statement?
+# Retrieves: cited version and its kind, in-force date, replacement or revocation with the other document and its date.
+PREFIX cdsg: <https://w3id.org/cdsg/core#>
+PREFIX time: <http://www.w3.org/2006/time#>
+SELECT DISTINCT ?statement ?document ?version ?versionKind ?inForceFrom ?change ?otherDocument ?changeDate WHERE {
+  ?statement a cdsg:PolicyTargetCategoryStatement ; cdsg:isExpressedIn ?document .
+  OPTIONAL { ?statement cdsg:hasSourceEvidence ?evidence . ?evidence cdsg:evidenceDocument ?document ; cdsg:evidenceDocumentVersion ?version .
+             ?version cdsg:isVersionOf ?document ; cdsg:versionKind ?versionKind .
+             OPTIONAL { ?version cdsg:versionInForceFrom ?inForceFrom } }
+  OPTIONAL {
+    { ?a a cdsg:DocumentSupersessionAssertion ; cdsg:supersedingDocument ?document ; cdsg:supersededDocument ?otherDocument .
+      OPTIONAL { ?a cdsg:supersessionEffectiveFrom ?changeDate } BIND ("replaces" AS ?change) }
+    UNION
+    { ?a a cdsg:DocumentSupersessionAssertion ; cdsg:supersededDocument ?document ; cdsg:supersedingDocument ?otherDocument .
+      OPTIONAL { ?a cdsg:supersessionEffectiveFrom ?changeDate } BIND ("replaced by" AS ?change) }
+    UNION
+    { ?tq cdsg:qualifiesPolicyDocument ?document ; cdsg:periodEndedByNormativeDocument ?otherDocument ;
+          cdsg:hasTemporalInterval/time:hasEnd/time:inXSDDateTime ?changeDate . BIND ("revoked by" AS ?change) }
+  }
+} ORDER BY ?statement

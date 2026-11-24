@@ -1,0 +1,21 @@
+ROBOT: ROBOT version 1.9.10
+== OWL 2 DL profile: core
+OWL 2 DL Profile Report: [Ontology and imports closure in profile]
+
+== OWL 2 DL profile: merged
+OWL 2 DL Profile Report: [Ontology and imports closure in profile]
+
+== HermiT: core
+consistent, no unsatisfiable classes
+== HermiT: merged
+consistent, no unsatisfiable classes
+== HermiT: class assertions of the merged graph (results/merged-inferred-class-assertions.ttl)
+== HermiT: positive fixture (class assertions written to results/positive-fixture-inferred.ttl)
+== HermiT: inconsistency fixture (must be reported inconsistent)
+PASS: reasoner reports inconsistency
+== HermiT: curated-and-source fixture (must be reported inconsistent)
+PASS: reasoner reports inconsistency
+== HermiT: document-and-version fixture (must be reported inconsistent)
+PASS: reasoner reports inconsistency
+== HermiT: category with two specifying statements of different types (must be reported inconsistent)
+PASS: reasoner reports inconsistency

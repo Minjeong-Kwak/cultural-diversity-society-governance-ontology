@@ -1,0 +1,229 @@
+{
+  "CQ1": {
+    "expected": {
+      "basis": "Source analysis: 18 source-specified categories, specified by 13 normative definitions, 1 statistical definition, 3 constitution rules and 1 operationalization; 16 of the specifying statements are in normative documents and cite a version. Subtypes are not asserted, so without entailment the answer is empty.",
+      "rows": 18,
+      "rows_without_entailment": 0,
+      "checks": [
+        {
+          "where": {
+            "kind": "NormativelyDefinedPolicyTargetCategory"
+          },
+          "rows": 13
+        },
+        {
+          "where": {
+            "kind": "StatisticallyDefinedPolicyTargetCategory"
+          },
+          "rows": 1
+        },
+        {
+          "where": {
+            "kind": "NormativelyConstitutedPolicyTargetCategory"
+          },
+          "rows": 3
+        },
+        {
+          "where": {
+            "kind": "OperationalizedPolicyTargetCategory"
+          },
+          "rows": 1
+        },
+        {
+          "where": {
+            "version": "*"
+          },
+          "rows": 16
+        }
+      ]
+    },
+    "regression": {
+      "rows": 18,
+      "normalized_sha256": "b60037337c143f53b393ee93386cf62fe413df4abdce16a44ef99bccbc17b0a3",
+      "variables": [
+        "category",
+        "kind",
+        "statement",
+        "document",
+        "version",
+        "jurisdiction",
+        "evidenceRecords"
+      ],
+      "entailment": "hermit"
+    }
+  },
+  "CQ2": {
+    "expected": {
+      "basis": "Sourcing assessment of the 242 curated categories at 2026-08-27: no source statement 225, context statements only 2, related source categories only 6, membership specified 9. The specifying source of 8 was in force at the reference date; the LEP definition of Executive Order 13166 had been revoked by Executive Order 14224 on 1 March 2025.",
+      "rows": 5,
+      "checks": [
+        {
+          "where": {
+            "outcome": "no-source-statement-identified"
+          },
+          "rows": 1,
+          "equals": {
+            "categories": "225"
+          }
+        },
+        {
+          "where": {
+            "outcome": "context-statement-only"
+          },
+          "rows": 1,
+          "equals": {
+            "categories": "2"
+          }
+        },
+        {
+          "where": {
+            "outcome": "related-source-category-only"
+          },
+          "rows": 1,
+          "equals": {
+            "categories": "6"
+          }
+        },
+        {
+          "where": {
+            "outcome": "membership-specified",
+            "validity": "source-validity/in-force"
+          },
+          "rows": 1,
+          "equals": {
+            "categories": "8"
+          }
+        },
+        {
+          "where": {
+            "outcome": "membership-specified",
+            "validity": "no-longer-in-force"
+          },
+          "rows": 1,
+          "equals": {
+            "categories": "1",
+            "endedByDocuments": "https://w3id.org/cdsg/resource/us/ExecutiveOrder_7b601959",
+            "endDates": "2025-03-01T00:00:00"
+          }
+        }
+      ]
+    },
+    "regression": {
+      "rows": 5,
+      "normalized_sha256": "b2b5d0b20e211820e9468e34b0bb1a6c85c901b3e8a9a19050aa1e5a21dbe294",
+      "variables": [
+        "outcome",
+        "validity",
+        "categories",
+        "endedByDocuments",
+        "endDates"
+      ],
+      "entailment": "none"
+    }
+  },
+  "CQ3": {
+    "expected": {
+      "basis": "Alignment review: 21 alignments, 10 close, 6 related, 3 broader-than-curated and 2 narrower-than-curated, each with one evidence record; the related alignments include the Canadian terminology statement and the Australian and UK classification and indicator statements.",
+      "rows": 21,
+      "checks": [
+        {
+          "where": {
+            "relation": "close"
+          },
+          "rows": 10
+        },
+        {
+          "where": {
+            "relation": "related"
+          },
+          "rows": 6
+        },
+        {
+          "where": {
+            "relation": "broader-than-curated"
+          },
+          "rows": 3
+        },
+        {
+          "where": {
+            "relation": "narrower-than-curated"
+          },
+          "rows": 2
+        },
+        {
+          "where": {
+            "statementType": "TargetCategoryTerminologyStatement"
+          },
+          "rows": 1
+        },
+        {
+          "where": {
+            "evidence": "*"
+          },
+          "rows": 21
+        }
+      ]
+    },
+    "regression": {
+      "rows": 21,
+      "normalized_sha256": "5547e1fb51b853d83f6626edd8ea31d7195acc4d3b36a99f3f4278070b622a07",
+      "variables": [
+        "curated",
+        "relation",
+        "source",
+        "statement",
+        "statementType",
+        "evidence"
+      ],
+      "entailment": "none"
+    }
+  },
+  "CQ4": {
+    "expected": {
+      "basis": "Version headers and source texts: 24 statements, 17 of them in normative documents with a cited version; the sources state one replacement (revised SPD 15 replaces the 1997 standards from 28 March 2024) and one revocation (Executive Order 14224 revokes Executive Order 13166 on 1 March 2025).",
+      "rows": 24,
+      "checks": [
+        {
+          "where": {
+            "version": "*"
+          },
+          "rows": 17
+        },
+        {
+          "where": {
+            "change": "replaces"
+          },
+          "rows": 1,
+          "equals": {
+            "changeDate": "2024-03-28T00:00:00"
+          }
+        },
+        {
+          "where": {
+            "change": "revoked by"
+          },
+          "rows": 1,
+          "equals": {
+            "otherDocument": "https://w3id.org/cdsg/resource/us/ExecutiveOrder_7b601959",
+            "changeDate": "2025-03-01T00:00:00"
+          }
+        }
+      ]
+    },
+    "regression": {
+      "rows": 24,
+      "normalized_sha256": "b4207ee7ca66d68cfb9a78bc5977e71add9c51933abdd6b0fff03eec9531568a",
+      "variables": [
+        "statement",
+        "document",
+        "version",
+        "versionKind",
+        "inForceFrom",
+        "change",
+        "otherDocument",
+        "changeDate"
+      ],
+      "entailment": "none"
+    }
+  }
+}

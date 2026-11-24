@@ -1,0 +1,865 @@
+@prefix cdsg: <https://w3id.org/cdsg/core#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix gufo: <http://purl.org/nemo/gufo#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:alternative a owl:AnnotationProperty .
+
+dcterms:conformsTo a owl:AnnotationProperty .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:creator a owl:ObjectProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:isReplacedBy a owl:AnnotationProperty .
+
+dcterms:issued a owl:DatatypeProperty .
+
+dcterms:language a owl:DatatypeProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:modified a owl:AnnotationProperty .
+
+dcterms:source a owl:ObjectProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+skos:ConceptScheme a owl:Class .
+
+skos:altLabel a owl:AnnotationProperty .
+
+skos:definition a owl:AnnotationProperty .
+
+skos:inScheme a owl:ObjectProperty .
+
+skos:note a owl:AnnotationProperty .
+
+skos:prefLabel a owl:AnnotationProperty .
+
+skos:scopeNote a owl:AnnotationProperty .
+
+time:Instant a owl:Class .
+
+time:hasBeginning a owl:ObjectProperty .
+
+time:hasEnd a owl:ObjectProperty .
+
+time:inXSDDateTime a owl:DatatypeProperty .
+
+prov:wasDerivedFrom a owl:ObjectProperty .
+
+cdsg:DocumentCoveragePeriodAssertion a gufo:AbstractIndividualType,
+        owl:Class ;
+    rdfs:label "document coverage period assertion"@en ;
+    rdfs:subClassOf cdsg:TemporalQualificationAssertion ;
+    skos:definition "A temporal qualification stating the period covered by a reporting document when the source explicitly presents the interval as a reporting or coverage period."@en ;
+    cdsg:module "temporal" .
+
+cdsg:DocumentIssuerRole a gufo:RoleMixin,
+        owl:Class ;
+    rdfs:label "document issuer role"@en ;
+    rdfs:subClassOf cdsg:DocumentActorRole ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( cdsg:InstitutionalActor [ a owl:Restriction ;
+                        owl:onProperty cdsg:issuesPolicyDocument ;
+                        owl:someValuesFrom cdsg:PolicyDocument ] ) ] ;
+    skos:definition "The anti-rigid role of an institutional actor that issues a policy document."@en .
+
+cdsg:DocumentPlanningPeriodAssertion a gufo:AbstractIndividualType,
+        owl:Class ;
+    rdfs:label "document planning period assertion"@en ;
+    rdfs:subClassOf cdsg:TemporalQualificationAssertion ;
+    skos:definition "A temporal qualification stating the planning horizon explicitly associated with a plan, strategy, roadmap, or comparable policy document. It is not the document's physical existence interval and does not automatically establish legal validity."@en ;
+    cdsg:module "temporal" .
+
+cdsg:DocumentPublisherRole a gufo:RoleMixin,
+        owl:Class ;
+    rdfs:label "document publisher role"@en ;
+    rdfs:subClassOf cdsg:DocumentActorRole ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( cdsg:InstitutionalActor [ a owl:Restriction ;
+                        owl:onProperty cdsg:publishesPolicyDocument ;
+                        owl:someValuesFrom cdsg:PolicyDocument ] ) ] ;
+    skos:definition "The anti-rigid role of an institutional actor that publishes a policy document."@en .
+
+cdsg:DocumentReferencePeriodAssertion a gufo:AbstractIndividualType,
+        owl:Class ;
+    rdfs:label "document reference period assertion"@en ;
+    rdfs:subClassOf cdsg:TemporalQualificationAssertion ;
+    skos:definition "A conservative temporal qualification associating a policy document with a reference or edition period when the evidence does not warrant interpreting that period as validity, planning horizon, or reporting coverage."@en ;
+    cdsg:module "temporal" .
+
+cdsg:GovernmentOrganization a gufo:SubKind,
+        owl:Class ;
+    rdfs:label "government organization"@en ;
+    rdfs:subClassOf cdsg:Organization ;
+    skos:definition "An organization belonging to a governmental or public-administration structure. This is a rigid organizational subkind, not a temporary policy role."@en ;
+    cdsg:module "actor" .
+
+cdsg:NormativelyDefinedPolicyTargetCategory a gufo:Type,
+        owl:Class ;
+    rdfs:label "normatively defined policy target category"@en ;
+    gufo:categorizes gufo:Endurant ;
+    rdfs:subClassOf cdsg:SourceDefinedPolicyTargetCategory ;
+    owl:disjointWith cdsg:StatisticallyDefinedPolicyTargetCategory ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( cdsg:SourceDefinedPolicyTargetCategory [ a owl:Restriction ;
+                        owl:onProperty cdsg:isDefinedBy ;
+                        owl:someValuesFrom cdsg:NormativeTargetCategoryDefinition ] ) ] ;
+    skos:definition "A source-defined policy target category whose explicit definition is normative content carrying institutional force in a jurisdiction."@en ;
+    cdsg:designRationale "Follows from the disjointness of normative and statistical definitions and from the single specifying statement of a source-specified category."@en .
+
+cdsg:TargetPopulationOperationalizationStatement a owl:Class ;
+    rdfs:label "target population operationalization statement"@en ;
+    rdfs:subClassOf cdsg:PolicyTargetCategoryStatement ;
+    owl:disjointWith cdsg:ExplicitTargetCategoryDefinition,
+        cdsg:TargetCategoryOperationalization ;
+    skos:definition "A source statement identifying indicators, dimensions, or measurement variables for operationalizing a target-population construct without fixing the extension of one single policy target category."@en ;
+    cdsg:designRationale "Statement types are disjoint by a recording rule: each statement record captures one semantic function of one source passage. A passage that both defines a category and operationalizes it is recorded as two statements, so a statement is never typed by two functions. A population operationalization names indicators or variables for a construct without fixing the extension of one category, which separates it from an explicit definition and from the operationalization of one category."@en .
+
+cdsg:administeredByInstitutionalActor a owl:ObjectProperty ;
+    rdfs:label "administered by institutional actor"@en ;
+    rdfs:domain cdsg:PolicyDocument ;
+    rdfs:range cdsg:InstitutionalActor ;
+    rdfs:subPropertyOf cdsg:hasDocumentActor ;
+    skos:definition "Identifies the institutional actor that the source names as responsible for administering the document, such as the ministry printed in the header of a Korean statute."@en ;
+    cdsg:module "actor" .
+
+cdsg:designRationale a owl:AnnotationProperty ;
+    rdfs:label "design rationale"@en .
+
+cdsg:documentReferenceYear a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "document reference year"@en ;
+    rdfs:domain cdsg:PolicyDocument ;
+    rdfs:range xsd:integer ;
+    skos:definition "A reference, edition, or reporting year attached to a policy document. It is distinct from issue date, effective date, and explicit multi-year coverage or planning intervals."@en .
+
+cdsg:evidenceDocumentVersion a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "evidence document version"@en ;
+    rdfs:domain cdsg:EvidenceRecord ;
+    rdfs:range cdsg:NormativeDocumentVersion ;
+    skos:definition "Identifies the version of a normative document in which the evidence location occurs."@en ;
+    cdsg:module "normative" .
+
+cdsg:evidencePage a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "evidence page"@en ;
+    rdfs:domain cdsg:EvidenceRecord ;
+    rdfs:range xsd:string ;
+    skos:definition "Records a page or page-range locator supplied for a source-evidence record."@en ;
+    cdsg:designRationale "Functional from rc.2: each evidence record supports one claim and cites one page or page range of one file. Evidence taken from a web page has no page and is located by its address instead."@en .
+
+cdsg:evidenceSourceFileName a owl:DatatypeProperty ;
+    rdfs:label "evidence source file name"@en ;
+    rdfs:domain cdsg:EvidenceRecord ;
+    rdfs:range xsd:string ;
+    skos:definition "The file name recorded by the curated dataset for the source document used by an evidence record."@en .
+
+cdsg:evidenceSourceURI a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "evidence source URI"@en ;
+    rdfs:domain cdsg:EvidenceRecord ;
+    rdfs:range xsd:anyURI ;
+    skos:definition "The web address of the page on which the evidence location occurs, for evidence taken from a web source rather than a file in the corpus. Such a record carries the retrieval time."@en ;
+    cdsg:module "provenance" .
+
+cdsg:evidenceText a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "evidence text"@en ;
+    rdfs:domain cdsg:EvidenceRecord ;
+    rdfs:range rdfs:Literal ;
+    skos:definition "Records source text or an evidential excerpt supporting the assertion represented by an evidence record."@en ;
+    cdsg:designRationale "Each evidence record supports one claim and carries one verbatim excerpt; fragments from the same page are joined with ' … '."@en .
+
+cdsg:hasGovernmentPost a owl:ObjectProperty ;
+    rdfs:label "has government post"@en ;
+    rdfs:domain cdsg:Organization ;
+    rdfs:range cdsg:GovernmentPost ;
+    owl:inverseOf cdsg:postInOrganization ;
+    skos:definition "Inverse of post in organization."@en .
+
+cdsg:hasIdentityEvidence a owl:ObjectProperty ;
+    rdfs:label "has identity evidence"@en ;
+    rdfs:domain cdsg:InstitutionalActor ;
+    rdfs:range cdsg:EvidenceRecord ;
+    skos:definition "Links an institutional actor to evidence supporting its identification or institutional classification in the curated corpus."@en .
+
+cdsg:hasInstitutionalActorType a owl:ObjectProperty ;
+    rdfs:label "has institutional actor classification"@en ;
+    rdfs:domain cdsg:Organization ;
+    rdfs:range skos:Concept ;
+    skos:definition "Links an organization to its institutional type in the controlled institutional actor type scheme; the classification is not treated as an ontological identity condition."@en .
+
+cdsg:hasJurisdictionEvidence a owl:ObjectProperty ;
+    rdfs:label "has jurisdiction evidence"@en ;
+    rdfs:domain cdsg:Jurisdiction ;
+    rdfs:range cdsg:EvidenceRecord ;
+    skos:definition "Links a jurisdiction individual to evidence supporting its identification or classification in the curated corpus."@en .
+
+cdsg:hasJurisdictionLevel a owl:ObjectProperty ;
+    rdfs:label "has jurisdiction level"@en ;
+    rdfs:domain cdsg:Jurisdiction ;
+    rdfs:range skos:Concept ;
+    skos:definition "Classifies a jurisdiction by a controlled level concept such as federal, national, subnational, or supranational."@en .
+
+cdsg:module a owl:AnnotationProperty ;
+    rdfs:label "module"@en .
+
+cdsg:periodEndedByNormativeDocument a owl:ObjectProperty ;
+    rdfs:label "period ended by normative document"@en ;
+    rdfs:domain cdsg:NormativeEffectivePeriodAssertion ;
+    rdfs:range cdsg:NormativeDocument ;
+    skos:definition "Identifies the normative document whose revocation, repeal or replacement ends the effective period recorded by a normative effective-period assertion. The assertion keeps the source of that end point traceable; it does not by itself state that every policy use of the affected category has ceased."@en .
+
+cdsg:preparedByInstitutionalActor a owl:ObjectProperty ;
+    rdfs:label "prepared by institutional actor"@en ;
+    rdfs:domain cdsg:PolicyDocument ;
+    rdfs:range cdsg:InstitutionalActor ;
+    rdfs:subPropertyOf cdsg:hasDocumentActor ;
+    skos:definition "Identifies the institutional actor that the source names as having prepared the document for its issuer."@en ;
+    cdsg:module "actor" .
+
+cdsg:publisherIdentifier a owl:DatatypeProperty ;
+    rdfs:label "publisher identifier"@en ;
+    rdfs:domain _:nb32976c56be042cfa8637a118145dd67b13 ;
+    rdfs:range rdfs:Literal ;
+    rdfs:subPropertyOf dcterms:identifier ;
+    skos:definition "An identifier the publisher assigns to the document or version and prints in it or in its official citation, such as an official citation, a law number, a Federal Register document number, an ISBN or a catalogue number. Recorded as it appears in the source."@en ;
+    cdsg:module "normative" .
+
+cdsg:publisherURI a owl:DatatypeProperty ;
+    rdfs:label "publisher URI"@en ;
+    rdfs:domain _:nb32976c56be042cfa8637a118145dd67b13 ;
+    rdfs:range xsd:anyURI ;
+    skos:definition "The persistent web address under which the publisher makes the document or version available, such as a European Legislation Identifier (ELI) or a law database address. Recorded only where the source prints it or the address was confirmed at the publisher."@en ;
+    cdsg:designRationale "Publisher addresses are kept as xsd:anyURI literals rather than as individuals linked by owl:sameAs: an ELI or law-database address names the publisher's resource, whose identity criteria are the publisher's, and asserting identity would import them. ELI distinguishes the legal resource from its expressions; CDSG records the address at the matching level, on the normative document or on the cited version."@en ;
+    cdsg:module "normative" .
+
+cdsg:qualifiesPolicyDocument a owl:ObjectProperty ;
+    rdfs:label "qualifies policy document"@en ;
+    rdfs:domain cdsg:TemporalQualificationAssertion ;
+    rdfs:range cdsg:PolicyDocument ;
+    rdfs:subPropertyOf cdsg:temporallyQualifies ;
+    skos:definition "Temporal qualification of a policy document."@en .
+
+cdsg:retrievedOn a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "retrieved on"@en ;
+    rdfs:domain cdsg:EvidenceRecord ;
+    rdfs:range xsd:dateTime ;
+    skos:definition "The time at which the cited file was retrieved, recorded only where the file itself states it, such as a browser print header or a generation stamp."@en .
+
+cdsg:sourceLocator a owl:DatatypeProperty ;
+    rdfs:label "source locator"@en ;
+    rdfs:domain cdsg:EvidenceRecord ;
+    rdfs:range xsd:string ;
+    skos:definition "A page, section, paragraph, URL fragment, file offset, or comparable source-location locator."@en .
+
+cdsg:sourceStatementText a owl:DatatypeProperty ;
+    rdfs:label "source statement text"@en ;
+    rdfs:domain cdsg:PolicyTargetCategoryStatement ;
+    rdfs:range rdfs:Literal ;
+    skos:definition "Textual wording preserved from the source for a target-category statement. Its semantic function is given by the statement subclass, not inferred merely from the wording."@en .
+
+cdsg:supersessionEffectiveFrom a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "supersession effective from"@en ;
+    rdfs:domain cdsg:DocumentSupersessionAssertion ;
+    rdfs:range xsd:dateTime ;
+    skos:definition "The date from which the source states that the replacement takes effect."@en ;
+    cdsg:module "normative" .
+
+cdsg:versionCurrentTo a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "version current to"@en ;
+    rdfs:domain cdsg:NormativeDocumentVersion ;
+    rdfs:range xsd:dateTime ;
+    skos:definition "The date up to which the publisher states that a consolidation is current."@en ;
+    cdsg:module "normative" .
+
+cdsg:versionIdentifier a owl:DatatypeProperty ;
+    rdfs:label "version identifier"@en ;
+    rdfs:domain cdsg:NormativeDocumentVersion ;
+    rdfs:range rdfs:Literal ;
+    skos:definition "The citation, revision identifier or consolidation statement by which the publisher identifies the version, recorded as it appears in the source."@en ;
+    cdsg:module "normative" .
+
+cdsg:versionInForceFrom a owl:DatatypeProperty,
+        owl:FunctionalProperty ;
+    rdfs:label "version in force from"@en ;
+    rdfs:domain cdsg:NormativeDocumentVersion ;
+    rdfs:range xsd:dateTime ;
+    skos:definition "The date from which the publisher states that the text of this version applies. For an original text it is the date of entry into force or signature the source states; for a consolidation it is the in-force date of the latest incorporated amendment."@en ;
+    cdsg:module "normative" .
+
+cdsg:versionKind a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "version kind"@en ;
+    rdfs:domain cdsg:NormativeDocumentVersion ;
+    rdfs:range skos:Concept ;
+    skos:definition "Classifies a normative document version as an original text or an official consolidation, using the document version kind scheme."@en ;
+    cdsg:module "normative" .
+
+cdsg:withinJurisdiction a owl:ObjectProperty,
+        owl:TransitiveProperty ;
+    rdfs:label "within jurisdiction"@en ;
+    rdfs:domain cdsg:Jurisdiction ;
+    rdfs:range cdsg:Jurisdiction ;
+    skos:definition "Relates a jurisdiction to a wider jurisdiction whose law applies within it, such as a Member State and the European Union. The relation is transitive."@en ;
+    cdsg:module "jurisdiction" .
+
+<https://w3id.org/cdsg/core/> a owl:Ontology ;
+    rdfs:label "CDSG Core Ontology"@en ;
+    dcterms:conformsTo <http://purl.org/nemo/gufo#/1.0.0> ;
+    dcterms:created "2026-09-12"^^xsd:date ;
+    dcterms:description "Release candidate 2 core ontology for the Cultural Diversity Society Governance (CDSG) ontology. It formalizes distinctions among policy content, documentary artifacts, institutional actors and roles, target categories and roles, source-relative assertions, situations, provenance, and qualified temporal and normative context."@en ;
+    dcterms:license <https://creativecommons.org/licenses/by/4.0/> ;
+    dcterms:modified "2026-10-12"^^xsd:date ;
+    dcterms:title "Cultural Diversity Society Governance Core Ontology"@en ;
+    vann:preferredNamespacePrefix "cdsg" ;
+    vann:preferredNamespaceUri "https://w3id.org/cdsg/core#"^^xsd:anyURI ;
+    owl:imports gufo: ;
+    owl:versionIRI <https://w3id.org/cdsg/core/1.0.0-rc.2> ;
+    owl:versionInfo "1.0.0-rc.2" .
+
+dcterms:identifier a owl:DatatypeProperty .
+
+org:Organization a owl:Class .
+
+org:Post a owl:Class .
+
+prov:specializationOf a owl:ObjectProperty .
+
+cdsg:InstitutionalActorRole a gufo:RoleMixin,
+        owl:Class ;
+    rdfs:label "institutional actor role"@en ;
+    rdfs:subClassOf cdsg:InstitutionalActor ;
+    skos:definition "An anti-rigid relational role borne by an institutional actor because it stands in a context-defining relation to a policy specification or document."@en ;
+    cdsg:designRationale "An institutional actor instantiates an actor role type because a policy specification or document designates it as implementer, coordinator, consulted actor, issuer or publisher. The role is founded on that designation, stated by the object property in the role's equivalence axiom, and does not change whether the actor is an organization or a government post."@en .
+
+cdsg:NormativeEffectivePeriodAssertion a gufo:AbstractIndividualType,
+        owl:Class ;
+    rdfs:label "normative effective period assertion"@en ;
+    rdfs:subClassOf cdsg:TemporalQualificationAssertion ;
+    skos:definition "A source-relative temporal qualification stating an effective or applicability interval for a normative document. It is distinct from the document's issue date and should be used only when the source warrants an effectiveness interpretation."@en ;
+    cdsg:module "temporal" .
+
+cdsg:NormativeTargetCategoryDefinition a owl:Class ;
+    rdfs:label "normative target category definition"@en ;
+    rdfs:subClassOf cdsg:ExplicitTargetCategoryDefinition,
+        cdsg:NormativeContent ;
+    owl:disjointWith cdsg:StatisticalTargetCategoryDefinition ;
+    skos:definition "An explicit target-category definition that is also normative content with institutional force in a jurisdiction."@en ;
+    cdsg:designRationale "Normative and statistical definitions are told apart by the institutional status of the source, not by its purpose: a definition carries institutional force in a jurisdiction or it does not. The MighEV definition of migration background serves statistics but is issued as an ordinance, so it is normative; the Federal Statistical Office definition of immigration history has no such force, so it is statistical."@en .
+
+cdsg:PolicyTargetRole a gufo:RoleMixin,
+        owl:Class ;
+    rdfs:label "policy target role"@en ;
+    rdfs:subClassOf gufo:Endurant ;
+    skos:definition "An anti-rigid relational role borne by a concrete endurant because policy content places it among the targets of a policy, directly or through a target category it falls under. It is distinct from the target category itself, and membership in a category does not by itself entail the role."@en ;
+    cdsg:designRationale "Policy target roles and institutional actor roles are relational types founded on the designation expressed in policy content: a bearer instantiates the role type because policy content names it, or a category it falls under, in that capacity. CDSG does not introduce gUFO relators for these designations; where the founding relation is stated, it is the object property in the role's equivalence axiom. The core declares the policy target role without such an axiom because this release records target categories, not individual bearers. The policy-process extension defines the direct target role by isDirectTargetOf and leaves the category-mediated target role to an explicit membership assertion. An actor that instantiates a role type is not thereby reclassified in its kind."@en .
+
+cdsg:StatisticallyDefinedPolicyTargetCategory a gufo:Type,
+        owl:Class ;
+    rdfs:label "statistically defined policy target category"@en ;
+    gufo:categorizes gufo:Endurant ;
+    rdfs:subClassOf cdsg:SourceDefinedPolicyTargetCategory ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( cdsg:SourceDefinedPolicyTargetCategory [ a owl:Restriction ;
+                        owl:onProperty cdsg:isDefinedBy ;
+                        owl:someValuesFrom cdsg:StatisticalTargetCategoryDefinition ] ) ] ;
+    skos:definition "A source-defined policy target category whose extension criteria are stated in a statistical standard or statistical definition rather than constituted by a normative rule."@en ;
+    cdsg:designRationale "Follows from the disjointness of normative and statistical definitions and from the single specifying statement of a source-specified category."@en .
+
+cdsg:TargetCategoryClassificationSchemeStatement a owl:Class ;
+    rdfs:label "target category classification-scheme statement"@en ;
+    rdfs:subClassOf cdsg:PolicyTargetCategoryStatement ;
+    owl:disjointWith cdsg:TargetCategoryTerminologyStatement ;
+    skos:definition "A source statement specifying a classification scheme, classification dimensions, or a set of categories without defining a single policy target category represented as one OWL class."@en ;
+    cdsg:designRationale "Statement types are disjoint by a recording rule: each statement record captures one semantic function of one source passage. A passage that both defines a category and operationalizes it is recorded as two statements, so a statement is never typed by two functions. A classification scheme statement lays out a set of categories or dimensions without fixing one category, which separates it from a definition and from a statement that only fixes or reports a term."@en .
+
+cdsg:appliesInJurisdiction a owl:ObjectProperty ;
+    rdfs:label "applies in jurisdiction"@en ;
+    rdfs:domain cdsg:PolicyContent ;
+    rdfs:range cdsg:Jurisdiction ;
+    skos:definition "Identifies a jurisdiction in which the policy content is intended to have application or interpretive relevance."@en .
+
+cdsg:evidenceDocument a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "evidence document"@en ;
+    rdfs:domain cdsg:EvidenceRecord ;
+    rdfs:range cdsg:PolicyDocument ;
+    skos:definition "Identifies the document in which the evidence location occurs."@en .
+
+cdsg:hasSourceEvidence a owl:ObjectProperty ;
+    rdfs:label "has source evidence"@en ;
+    rdfs:domain cdsg:PolicyContent ;
+    rdfs:range cdsg:EvidenceRecord ;
+    skos:definition "Links policy content or an assertion to a provenance record that identifies supporting documentary evidence."@en .
+
+cdsg:hasTemporalInterval a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "has temporal interval"@en ;
+    rdfs:domain cdsg:TemporalQualificationAssertion ;
+    rdfs:range time:Interval ;
+    skos:definition "Identifies the interval used by a temporal qualification assertion. The interval itself is represented using OWL-Time."@en .
+
+cdsg:isConstitutedBy a owl:ObjectProperty ;
+    rdfs:label "is constituted by"@en ;
+    rdfs:domain cdsg:NormativelyConstitutedPolicyTargetCategory ;
+    rdfs:range cdsg:TargetCategoryConstitutionRule ;
+    owl:inverseOf cdsg:constitutesTargetCategory ;
+    skos:definition "Inverse of constitutes target category."@en .
+
+cdsg:isOperationalizedBy a owl:ObjectProperty ;
+    rdfs:label "is operationalized by"@en ;
+    rdfs:domain cdsg:OperationalizedPolicyTargetCategory ;
+    rdfs:range cdsg:TargetCategoryOperationalization ;
+    owl:inverseOf cdsg:operationalizesTargetCategory ;
+    skos:definition "Inverse of operationalizes target category."@en .
+
+cdsg:isVersionOf a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "is version of"@en ;
+    rdfs:domain cdsg:NormativeDocumentVersion ;
+    rdfs:range cdsg:NormativeDocument ;
+    rdfs:subPropertyOf prov:specializationOf ;
+    skos:definition "Links a normative document version to the normative document whose text state it is."@en ;
+    cdsg:module "normative" .
+
+cdsg:issuedByInstitutionalActor a owl:ObjectProperty ;
+    rdfs:label "issued by institutional actor"@en ;
+    rdfs:domain cdsg:PolicyDocument ;
+    rdfs:range cdsg:InstitutionalActor ;
+    rdfs:subPropertyOf cdsg:hasDocumentActor ;
+    skos:definition "Relates a policy document to the institutional actor explicitly identified as issuing it."@en .
+
+cdsg:issuesPolicyDocument a owl:ObjectProperty ;
+    rdfs:label "issues policy document"@en ;
+    rdfs:domain cdsg:InstitutionalActor ;
+    rdfs:range cdsg:PolicyDocument ;
+    owl:inverseOf cdsg:issuedByInstitutionalActor ;
+    skos:definition "Inverse of issued by institutional actor."@en .
+
+cdsg:postInOrganization a owl:ObjectProperty ;
+    rdfs:label "post in organization"@en ;
+    rdfs:domain cdsg:GovernmentPost ;
+    rdfs:range cdsg:Organization ;
+    skos:definition "Relates a government post to the organization in which the source models that post as institutionally located."@en .
+
+cdsg:publishedByInstitutionalActor a owl:ObjectProperty ;
+    rdfs:label "published by institutional actor"@en ;
+    rdfs:domain cdsg:PolicyDocument ;
+    rdfs:range cdsg:InstitutionalActor ;
+    rdfs:subPropertyOf cdsg:hasDocumentActor ;
+    skos:definition "Relates a policy document to the institutional actor explicitly identified as publishing it."@en .
+
+cdsg:publishesPolicyDocument a owl:ObjectProperty ;
+    rdfs:label "publishes policy document"@en ;
+    rdfs:domain cdsg:InstitutionalActor ;
+    rdfs:range cdsg:PolicyDocument ;
+    owl:inverseOf cdsg:publishedByInstitutionalActor ;
+    skos:definition "Inverse of published by institutional actor."@en .
+
+cdsg:supersededDocument a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "superseded document"@en ;
+    rdfs:domain cdsg:DocumentSupersessionAssertion ;
+    rdfs:range cdsg:PolicyDocument ;
+    skos:definition "Identifies the earlier document that, according to the source, is replaced."@en ;
+    cdsg:module "normative" .
+
+cdsg:supersedingDocument a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "superseding document"@en ;
+    rdfs:domain cdsg:DocumentSupersessionAssertion ;
+    rdfs:range cdsg:PolicyDocument ;
+    skos:definition "Identifies the later document that, according to the source, replaces the earlier one."@en ;
+    cdsg:module "normative" .
+
+time:Interval a owl:Class .
+
+cdsg:DocumentActorRole a gufo:RoleMixin,
+        owl:Class ;
+    rdfs:label "document actor role"@en ;
+    rdfs:subClassOf cdsg:InstitutionalActorRole ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( cdsg:InstitutionalActor [ a owl:Restriction ;
+                        owl:onProperty cdsg:isDocumentActorFor ;
+                        owl:someValuesFrom cdsg:PolicyDocument ] ) ] ;
+    skos:definition "A relational role borne by an institutional actor because it stands in an issuance or publication relation to a policy document."@en .
+
+cdsg:PolicyAssertion a gufo:AbstractIndividualType,
+        owl:Class ;
+    rdfs:label "policy assertion"@en ;
+    rdfs:subClassOf cdsg:PolicyContent ;
+    skos:definition "Policy content that asserts or reports that some policy-relevant state of affairs, event, status, or outcome obtains or obtained. An assertion is distinct from the situation or event it describes."@en ;
+    cdsg:module "provenance" .
+
+cdsg:StatisticalTargetCategoryDefinition a owl:Class ;
+    rdfs:label "statistical target category definition"@en ;
+    rdfs:subClassOf cdsg:ExplicitTargetCategoryDefinition ;
+    skos:definition "An explicit target-category definition used by a statistical authority or standard and not represented as a normatively constitutive legal definition."@en ;
+    cdsg:designRationale "Normative and statistical definitions are told apart by the institutional status of the source: a definition carries institutional force in a jurisdiction or it does not. See NormativeTargetCategoryDefinition."@en .
+
+cdsg:TargetCategoryTerminologyStatement a owl:Class ;
+    rdfs:label "target category terminology statement"@en ;
+    rdfs:subClassOf cdsg:PolicyTargetCategoryStatement ;
+    skos:definition "A source statement about the terminology used for one or more population or target categories, without itself fixing the extension of a single target category."@en ;
+    cdsg:designRationale "Statement types are disjoint by a recording rule: each statement record captures one semantic function of one source passage, and a passage that performs two functions is recorded as two statements. A terminology statement fixes or reports the term used for a category without stating its extension, which separates it from a definition and from a classification scheme."@en .
+
+cdsg:constitutesTargetCategory a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "constitutes target category"@en ;
+    rdfs:domain cdsg:TargetCategoryConstitutionRule ;
+    rdfs:range cdsg:NormativelyConstitutedPolicyTargetCategory ;
+    rdfs:subPropertyOf cdsg:specifiesTargetCategory ;
+    skos:definition "Links a normative constitution rule to the source-specified category or status whose membership it establishes."@en .
+
+cdsg:definesTargetCategory a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "defines target category"@en ;
+    rdfs:domain cdsg:ExplicitTargetCategoryDefinition ;
+    rdfs:range cdsg:SourceDefinedPolicyTargetCategory ;
+    rdfs:subPropertyOf cdsg:specifiesTargetCategory ;
+    skos:definition "Links an explicit source definition to the source-defined policy target category whose extension criteria it states."@en .
+
+cdsg:expressesContent a owl:ObjectProperty ;
+    rdfs:label "expresses content"@en ;
+    rdfs:domain cdsg:PolicyDocument ;
+    rdfs:range cdsg:PolicyContent ;
+    owl:inverseOf cdsg:isExpressedIn ;
+    skos:definition "Links a policy document to abstract policy content expressed by it."@en .
+
+cdsg:isDocumentActorFor a owl:ObjectProperty ;
+    rdfs:label "is document actor for"@en ;
+    rdfs:domain cdsg:InstitutionalActor ;
+    rdfs:range cdsg:PolicyDocument ;
+    owl:inverseOf cdsg:hasDocumentActor ;
+    skos:definition "Inverse of has document actor."@en .
+
+cdsg:isExpressedIn a owl:ObjectProperty ;
+    rdfs:label "is expressed in"@en ;
+    rdfs:domain cdsg:PolicyContent ;
+    rdfs:range cdsg:PolicyDocument ;
+    owl:inverseOf cdsg:expressesContent ;
+    skos:definition "Links abstract policy content to a document that expresses it."@en .
+
+cdsg:operationalizesTargetCategory a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "operationalizes target category"@en ;
+    rdfs:domain cdsg:TargetCategoryOperationalization ;
+    rdfs:range cdsg:OperationalizedPolicyTargetCategory ;
+    rdfs:subPropertyOf cdsg:specifiesTargetCategory ;
+    skos:definition "Links an operationalization statement to the source-specified category whose membership criteria it operationalizes."@en .
+
+cdsg:temporallyQualifies a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "temporally qualifies"@en ;
+    rdfs:domain cdsg:TemporalQualificationAssertion ;
+    skos:definition "Identifies the single resource whose temporal qualification is asserted."@en .
+
+skos:Concept a owl:Class .
+
+prov:Entity a owl:Class .
+
+cdsg:DocumentSupersessionAssertion a gufo:AbstractIndividualType,
+        owl:Class ;
+    rdfs:label "document supersession assertion"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass cdsg:PolicyDocument ;
+            owl:onProperty cdsg:supersedingDocument ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass cdsg:PolicyDocument ;
+            owl:onProperty cdsg:supersededDocument ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        cdsg:PolicyAssertion ;
+    skos:definition "A source-relative assertion that a later document replaces an earlier one, so that the definitions or classifications the later document expresses take the place of those in the earlier document. It is recorded only where a source states the replacement."@en ;
+    cdsg:designRationale "Three changes to a source statement are kept apart. Replacement: a later source states that it replaces or supersedes an earlier document (the 2024 revision of OMB SPD 15 replacing the 1997 standards). Revocation without replacement: a document's effective period ends and the ending document is recorded with periodEndedByNormativeDocument (Executive Order 13166, revoked by Executive Order 14224). Introduction of a parallel definition: a new concept is added while the old one stays in use (the Federal Statistical Office's immigration history, introduced as an additional data offer while migration-background results continue to be published); no relation is asserted. Replacement is reified because the source that states it, the evidence and the date from which it takes effect belong to the claim, not to either document."@en ;
+    cdsg:module "normative" .
+
+cdsg:GovernmentPost a gufo:Kind,
+        owl:Class ;
+    rdfs:label "government post"@en ;
+    rdfs:subClassOf org:Post,
+        cdsg:InstitutionalActor ;
+    skos:definition "A socially instituted government office or position that persists independently of the particular office holder, such as a ministerial or commissioner post."@en ;
+    cdsg:designRationale "A government post is a position within an organization that persists through changes of its holder; an organization is a functional complex. They are different kinds; see Organization."@en ;
+    cdsg:module "actor" .
+
+cdsg:NormativeContent a gufo:AbstractIndividualType,
+        owl:Class ;
+    rdfs:label "normative content"@en ;
+    rdfs:subClassOf cdsg:PolicyContent ;
+    skos:definition "Policy content that has normative force in virtue of an institutional source and context."@en ;
+    cdsg:module "normative" .
+
+cdsg:NormativeDocument a gufo:SubKind,
+        owl:Class ;
+    rdfs:label "normative document"@en ;
+    rdfs:seeAlso <http://data.europa.eu/eli/ontology#LegalResource> ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cdsg:expressesContent ;
+            owl:someValuesFrom cdsg:NormativeContent ],
+        cdsg:PolicyDocument ;
+    skos:definition "A policy document whose institutional status gives normative force to at least some content it expresses, such as a statute, regulation, executive order, or formal administrative decision."@en ;
+    cdsg:module "normative" .
+
+cdsg:isDefinedBy a owl:ObjectProperty ;
+    rdfs:label "is defined by"@en ;
+    rdfs:domain cdsg:SourceDefinedPolicyTargetCategory ;
+    rdfs:range cdsg:ExplicitTargetCategoryDefinition ;
+    owl:inverseOf cdsg:definesTargetCategory ;
+    skos:definition "Inverse of defines target category."@en .
+
+cdsg:isSpecifiedByTargetCategoryStatement a owl:ObjectProperty ;
+    rdfs:label "is specified by target-category statement"@en ;
+    rdfs:domain cdsg:SourceSpecifiedPolicyTargetCategory ;
+    rdfs:range cdsg:PolicyTargetCategoryStatement ;
+    owl:inverseOf cdsg:specifiesTargetCategory ;
+    skos:definition "Inverse of specifies target category."@en .
+
+cdsg:OperationalizedPolicyTargetCategory a gufo:Type,
+        owl:Class ;
+    rdfs:label "operationalized policy target category"@en ;
+    gufo:categorizes gufo:Endurant ;
+    rdfs:subClassOf cdsg:SourceSpecifiedPolicyTargetCategory ;
+    owl:disjointWith cdsg:NormativelyConstitutedPolicyTargetCategory ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( cdsg:PolicyTargetCategory [ a owl:Restriction ;
+                        owl:onProperty cdsg:isOperationalizedBy ;
+                        owl:someValuesFrom cdsg:TargetCategoryOperationalization ] ) ] ;
+    skos:definition "A source-specified policy target category whose membership criteria are operationalized for statistical or administrative use rather than presented as a legal definition."@en ;
+    cdsg:designRationale "Follows from the disjointness of operationalizations and constitution rules and from the single specifying statement of a source-specified category."@en .
+
+cdsg:Organization a gufo:Kind,
+        owl:Class ;
+    rdfs:label "organization"@en ;
+    rdfs:subClassOf gufo:FunctionalComplex,
+        org:Organization,
+        cdsg:InstitutionalActor ;
+    owl:disjointWith cdsg:GovernmentPost ;
+    skos:definition "A socially constituted functional complex with an organizational identity that persists through changes in members, office holders, and many internal arrangements."@en ;
+    cdsg:designRationale "An organization is a functional complex whose identity persists through changes of members and office holders; a government post is a position within an organization that persists through changes of its holder. They are different kinds, so neither can be the other, and reasoning from a post's document roles must not reclassify it as an organization; an inconsistency fixture tests this."@en ;
+    cdsg:module "actor" .
+
+cdsg:specifiesTargetCategory a owl:FunctionalProperty,
+        owl:ObjectProperty ;
+    rdfs:label "specifies target category"@en ;
+    rdfs:domain cdsg:PolicyTargetCategoryStatement ;
+    rdfs:range cdsg:SourceSpecifiedPolicyTargetCategory ;
+    owl:inverseOf cdsg:isSpecifiedByTargetCategoryStatement ;
+    skos:definition "General relation from a source target-category statement to the single source-specified category whose criteria or membership conditions it establishes."@en .
+
+cdsg:NormativelyConstitutedPolicyTargetCategory a gufo:Type,
+        owl:Class ;
+    rdfs:label "normatively constituted policy target category"@en ;
+    gufo:categorizes gufo:Endurant ;
+    rdfs:subClassOf cdsg:SourceSpecifiedPolicyTargetCategory ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( cdsg:PolicyTargetCategory [ a owl:Restriction ;
+                        owl:onProperty cdsg:isConstitutedBy ;
+                        owl:someValuesFrom cdsg:TargetCategoryConstitutionRule ] ) ] ;
+    skos:definition "A source-specified policy target category whose membership or status is constituted by a normative rule rather than merely described by a lexical definition."@en ;
+    cdsg:designRationale "Follows from the disjointness of constitution rules from definitions and operationalizations and from the single specifying statement of a source-specified category."@en .
+
+cdsg:PolicyTargetCategory a gufo:Type,
+        owl:Class ;
+    rdfs:label "policy target category"@en ;
+    gufo:categorizes gufo:Endurant ;
+    rdfs:subClassOf gufo:NonSortal ;
+    owl:disjointWith cdsg:PolicyTargetRole ;
+    skos:definition "A higher-order type used to classify endurants as belonging to a policy-relevant category. A policy target category is distinct from a definition or rule that specifies its criteria, from any concrete bearer falling under it, and from the anti-rigid policy-target role a bearer may acquire in a policy context."@en ;
+    cdsg:designRationale "Source-specified target categories and research-curated comparison categories are distinct resources. Category-level targeting does not entail that any concrete bearer has actually received a policy intervention. The instances of PolicyTargetCategory are categories, which classify endurants; the instances of PolicyTargetRole are endurants in a target role. A category is not an endurant in a role, so the two are disjoint."@en ;
+    cdsg:module "target" .
+
+cdsg:SourceSpecifiedPolicyTargetCategory a gufo:Type,
+        owl:Class ;
+    rdfs:label "source-specified policy target category"@en ;
+    gufo:categorizes gufo:Endurant ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:maxQualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onClass cdsg:PolicyTargetCategoryStatement ;
+            owl:onProperty cdsg:isSpecifiedByTargetCategoryStatement ],
+        gufo:RoleMixin,
+        cdsg:PolicyTargetCategory ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( cdsg:PolicyTargetCategory [ a owl:Restriction ;
+                        owl:onProperty cdsg:isSpecifiedByTargetCategoryStatement ;
+                        owl:someValuesFrom cdsg:PolicyTargetCategoryStatement ] ) ] ;
+    skos:definition "A policy target category whose extension criteria or membership conditions are explicitly specified by a represented source statement. It is distinct from a research-curated comparison category."@en ;
+    cdsg:designRationale "A source-specified category is a gufo:RoleMixin. It is non-sortal because its members are of different kinds. It is anti-rigid because membership holds only while a source statement specifies it: an individual ceases to fall under the category, without ceasing to exist, when the specifying norm is revoked or amended. Executive Order 13166, revoked by Executive Order 14224, is the case in the evidence set. The existential dependence of the category on a specifying statement is stated by the equivalence axiom of this class."@en .
+
+cdsg:TargetCategoryConstitutionRule a owl:Class ;
+    rdfs:label "target category constitution rule"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass cdsg:NormativelyConstitutedPolicyTargetCategory ;
+            owl:onProperty cdsg:constitutesTargetCategory ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        cdsg:NormativeContent,
+        cdsg:PolicyTargetCategoryStatement ;
+    skos:definition "Normative content that establishes how membership in or acquisition of a policy-relevant legal status or category comes about. It is not conflated with a lexical category definition."@en ;
+    cdsg:designRationale "Statement types are disjoint by a recording rule: each statement record captures one semantic function of one source passage, and a passage that performs two functions is recorded as two statements. A constitution rule creates a category's status by legal force; a definition states criteria for a term and an operationalization gives criteria without legal force, so the three are kept apart."@en .
+
+cdsg:TargetCategoryOperationalization a owl:Class ;
+    rdfs:label "target category operationalization"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass cdsg:OperationalizedPolicyTargetCategory ;
+            owl:onProperty cdsg:operationalizesTargetCategory ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        cdsg:PolicyTargetCategoryStatement ;
+    owl:disjointWith cdsg:TargetCategoryConstitutionRule ;
+    skos:definition "A source statement giving operational criteria used to delimit membership in a single policy-relevant target category without treating those criteria as a legal definition."@en ;
+    cdsg:designRationale "Statement types are disjoint by a recording rule: each statement record captures one semantic function of one source passage. A passage that both defines a category and operationalizes it is recorded as two statements, so a statement is never typed by two functions. An operationalization gives measurement or administrative criteria for one category without legal force; a constitution rule creates the category's status by legal force, so the two are kept apart."@en .
+
+cdsg:hasDocumentActor a owl:ObjectProperty ;
+    rdfs:label "has document actor"@en ;
+    rdfs:domain cdsg:PolicyDocument ;
+    rdfs:range cdsg:InstitutionalActor ;
+    owl:inverseOf cdsg:isDocumentActorFor ;
+    skos:definition "General relation from a policy document to an institutional actor standing in a document-level role."@en .
+
+cdsg:ExplicitTargetCategoryDefinition a owl:Class ;
+    rdfs:label "explicit target category definition"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass cdsg:SourceDefinedPolicyTargetCategory ;
+            owl:onProperty cdsg:definesTargetCategory ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        cdsg:PolicyTargetCategoryStatement ;
+    owl:disjointWith cdsg:TargetCategoryClassificationSchemeStatement,
+        cdsg:TargetCategoryConstitutionRule,
+        cdsg:TargetCategoryOperationalization,
+        cdsg:TargetCategoryTerminologyStatement ;
+    skos:definition "A source statement that explicitly states extension criteria for a single target category using definitional content such as “means”, “is”, or an equivalent criterion."@en ;
+    cdsg:designRationale "Statement types are disjoint by a recording rule: each statement record captures one semantic function of one source passage. A passage that both defines a category and operationalizes it is recorded as two statements, so a statement is never typed by two functions. An explicit definition states the extension criteria of one category; a classification scheme, a constitution rule, an operationalization and a terminology statement do not, so they are kept apart from it."@en .
+
+cdsg:Jurisdiction a gufo:Kind,
+        owl:Class ;
+    rdfs:label "jurisdiction"@en ;
+    rdfs:subClassOf gufo:Object ;
+    skos:definition "An identity-bearing legally or institutionally constituted domain of authority used to qualify the applicability, observation, or target context of policy information. Federal, national, subnational, and supranational levels are treated as controlled classifications rather than distinct ontological kinds."@en ;
+    cdsg:module "context" .
+
+cdsg:NormativeDocumentVersion a gufo:Kind,
+        owl:Class ;
+    rdfs:label "normative document version"@en ;
+    rdfs:seeAlso <http://data.europa.eu/eli/ontology#LegalExpression> ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass cdsg:NormativeDocument ;
+            owl:onProperty cdsg:isVersionOf ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        gufo:Object,
+        prov:Entity ;
+    owl:disjointWith cdsg:PolicyContent,
+        cdsg:PolicyDocument ;
+    skos:definition "A published text state of a normative document: the original text as made or published, or an official consolidation that incorporates amendments up to a stated point. Each version is a version of exactly one normative document, and a source statement is cited from a version."@en ;
+    cdsg:designRationale "A normative document keeps its identity while it is amended, so it is modelled as a gufo:Object whose text changes over time. The definition a source statement cites belongs to one fixed text state. The version is a separate gufo:Kind, disjoint with PolicyDocument, so that document identity, text state and propositional content are not conflated. isVersionOf specializes prov:specializationOf, the PROV relation for a more specific state of an entity. Dates are recorded only as the publisher states them; no in-force date is inferred."@en ;
+    cdsg:module "normative" .
+
+cdsg:SourceDefinedPolicyTargetCategory a gufo:Type,
+        owl:Class ;
+    rdfs:label "source-defined policy target category"@en ;
+    gufo:categorizes gufo:Endurant ;
+    rdfs:subClassOf cdsg:SourceSpecifiedPolicyTargetCategory ;
+    owl:disjointWith cdsg:NormativelyConstitutedPolicyTargetCategory,
+        cdsg:OperationalizedPolicyTargetCategory ;
+    owl:equivalentClass [ a owl:Class ;
+            owl:intersectionOf ( cdsg:PolicyTargetCategory [ a owl:Restriction ;
+                        owl:onProperty cdsg:isDefinedBy ;
+                        owl:someValuesFrom cdsg:ExplicitTargetCategoryDefinition ] ) ] ;
+    skos:definition "A source-specified policy target category whose extension is stated through an explicit category definition."@en ;
+    cdsg:designRationale "Source-specified categories are individuated by the statement that specifies them: the migration-background category of MighEV section 6 and that of the Federal Statistical Office variant 1.1 are two categories. A source-specified category has at most one specifying statement, so the disjointness of the statement types carries over to the category types. A category that a source defines is therefore not one that a source constitutes or operationalizes; a fixture tests that a category given two specifying statements of different types is inconsistent."@en .
+
+cdsg:TemporalQualificationAssertion a gufo:AbstractIndividualType,
+        owl:Class ;
+    rdfs:label "temporal qualification assertion"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass time:Interval ;
+            owl:onProperty cdsg:hasTemporalInterval ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        [ a owl:Restriction ;
+            owl:onClass owl:Thing ;
+            owl:onProperty cdsg:temporallyQualifies ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        cdsg:PolicyAssertion ;
+    skos:definition "A source-relative assertion that qualifies a policy-relevant item with a temporal interval. It reifies the qualification so that the semantic kind of time relation, the interval, the qualified item, and provenance can be represented separately."@en ;
+    cdsg:module "temporal" .
+
+cdsg:PolicyContent a gufo:AbstractIndividualType,
+        owl:Class ;
+    rdfs:label "policy content"@en ;
+    rdfs:subClassOf gufo:AbstractIndividual ;
+    skos:definition "An abstract information content item expressed in one or more policy documents. It can be a prescription, goal, definition, recommendation, or descriptive assertion, but is not itself the document that bears it."@en ;
+    cdsg:designRationale "Policy content is aligned to gufo:AbstractIndividual because it is propositional content: the same specification, definition or assertion can be expressed in several documents and versions, and its identity does not depend on any physical inscription. The document that expresses it is a separate gufo:Object linked by isExpressedIn."@en ;
+    cdsg:module "normative" .
+
+cdsg:PolicyTargetCategoryStatement a owl:Class ;
+    rdfs:label "policy target category statement"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty cdsg:isExpressedIn ;
+            owl:someValuesFrom cdsg:PolicyDocument ],
+        [ a owl:Restriction ;
+            owl:onProperty cdsg:appliesInJurisdiction ;
+            owl:someValuesFrom cdsg:Jurisdiction ],
+        [ a owl:Restriction ;
+            owl:onProperty cdsg:hasSourceEvidence ;
+            owl:someValuesFrom cdsg:EvidenceRecord ],
+        cdsg:PolicyContent ;
+    skos:definition "Source-expressed policy content concerning the criteria, constitution, operationalization, classification, or terminology of policy target categories. Subclasses distinguish these different semantic functions."@en .
+
+cdsg:EvidenceRecord a gufo:AbstractIndividualType,
+        owl:Class ;
+    rdfs:label "evidence record"@en ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:onClass cdsg:PolicyDocument ;
+            owl:onProperty cdsg:evidenceDocument ;
+            owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ],
+        gufo:AbstractIndividual,
+        prov:Entity ;
+    skos:definition "An abstract provenance record identifying the documentary source and location used to support a policy-content assertion in the knowledge graph. The evidence record is not the source document itself."@en ;
+    cdsg:designRationale "An evidence record is aligned to gufo:AbstractIndividual because it is an information entity of the knowledge graph that identifies a document, locator and excerpt; it is not the document and has no location or physical identity of its own."@en ;
+    cdsg:module "provenance" .
+
+cdsg:InstitutionalActor a gufo:Category,
+        owl:Class ;
+    rdfs:label "institutional actor"@en ;
+    rdfs:subClassOf gufo:Object ;
+    skos:definition "An identity-bearing institutional entity that can be referred to in policy or document relations. In CDSG this category presently covers organizations and institutionally constituted government posts; it is not itself a policy role."@en .
+
+cdsg:PolicyDocument a gufo:Kind,
+        owl:Class ;
+    rdfs:label "policy document"@en ;
+    rdfs:subClassOf gufo:Object,
+        prov:Entity ;
+    owl:disjointWith cdsg:PolicyContent ;
+    skos:definition "A socially recognized information-bearing document used to formulate, mandate, explain, evaluate, or report public policy. The document is distinct from the abstract policy content that it expresses."@en ;
+    cdsg:designRationale "A policy document keeps its identity while its text is amended, republished or consolidated, so it is a gufo:Object of its own kind. The definitions, rules and measures it contains are policy content, modelled separately as abstract individuals and linked to the document by isExpressedIn."@en ;
+    cdsg:module "normative" .
+
+_:nb32976c56be042cfa8637a118145dd67b52 rdf:first cdsg:NormativeDocumentVersion ;
+    rdf:rest () .
+
+_:nb32976c56be042cfa8637a118145dd67b53 rdf:first cdsg:PolicyDocument ;
+    rdf:rest _:nb32976c56be042cfa8637a118145dd67b52 .
+
+_:nb32976c56be042cfa8637a118145dd67b13 a owl:Class ;
+    owl:unionOf _:nb32976c56be042cfa8637a118145dd67b53 .
+

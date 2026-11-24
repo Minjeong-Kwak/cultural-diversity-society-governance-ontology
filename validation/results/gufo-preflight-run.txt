@@ -1,0 +1,9 @@
+gUFO shape-equivalent preflight
+RigidOrSemiRigidShape: 0 violations
+NonSortalShape: 0 violations
+BaseSortalShape: 0 violations
+KindShape: 0 violations
+EndurantTypeShape: 0 violations
+CategorizationShape: 0 violations
+PartitionPairwiseDisjointnessShape: 0 violations
+total: 0

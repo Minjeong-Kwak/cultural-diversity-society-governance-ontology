@@ -1,0 +1,19 @@
+@prefix cdsg: <https://w3id.org/cdsg/core#> .
+@prefix gufo: <http://purl.org/nemo/gufo#> .
+@prefix ex: <https://w3id.org/cdsg/test/> .
+
+ex:doc1 a cdsg:PolicyDocument .
+# IT01: an organization that issues a document instantiates the document issuer role
+ex:org1 a cdsg:Organization ; cdsg:issuesPolicyDocument ex:doc1 .
+# IT02 and NT03: a government post that publishes a document instantiates the publisher role and stays a post
+ex:post1 a cdsg:GovernmentPost ; cdsg:publishesPolicyDocument ex:doc1 .
+# IT03: a source-defined category linked to a normative definition is classified as normatively defined
+ex:cat1 a cdsg:SourceDefinedPolicyTargetCategory ; cdsg:isDefinedBy ex:def1 .
+ex:def1 a cdsg:NormativeTargetCategoryDefinition .
+# IT05: a bare category linked to a normative definition is classified as source-specified and as a role mixin
+ex:cat2 a cdsg:PolicyTargetCategory ; cdsg:isDefinedBy ex:def2 .
+ex:def2 a cdsg:NormativeTargetCategoryDefinition .
+# NT06 and IT06: a bearer that instantiates a target category (membership through OWL 2 punning)
+# is inferred to be an endurant but does not thereby bear a policy target role
+ex:cat2 a <http://www.w3.org/2002/07/owl#Class> ; <http://www.w3.org/2000/01/rdf-schema#subClassOf> gufo:Endurant .
+ex:bearer1 a ex:cat2 .

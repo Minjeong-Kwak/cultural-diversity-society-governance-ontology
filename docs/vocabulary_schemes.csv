@@ -1,0 +1,8 @@
+iri,local_name,label,concept_count
+https://w3id.org/cdsg/vocab#DocumentVersionKindScheme,DocumentVersionKindScheme,Document version kind scheme,2
+https://w3id.org/cdsg/vocab#InstitutionalActorTypeScheme,InstitutionalActorTypeScheme,Institutional actor type scheme,12
+https://w3id.org/cdsg/vocab#JurisdictionLevelScheme,JurisdictionLevelScheme,Jurisdiction level scheme,4
+https://w3id.org/cdsg/vocab#SourceValidityStatusScheme,SourceValidityStatusScheme,Source validity status scheme,3
+https://w3id.org/cdsg/vocab#TargetCategoryAlignmentRelationScheme,TargetCategoryAlignmentRelationScheme,Target category alignment relation scheme,6
+https://w3id.org/cdsg/vocab#TargetCategoryFacetScheme,TargetCategoryFacetScheme,Target category facet scheme,24
+https://w3id.org/cdsg/vocab#TargetCategorySourcingOutcomeScheme,TargetCategorySourcingOutcomeScheme,Target category sourcing outcome scheme,4

@@ -1,0 +1,107 @@
+@prefix ana: <https://w3id.org/cdsg/analytics#> .
+@prefix cdsg: <https://w3id.org/cdsg/core#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ana:TargetCategoryAlignmentAssertionShape a sh:NodeShape ;
+    sh:property [ sh:class skos:Concept ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ana:alignmentRelation ],
+        [ sh:class ana:CuratedPolicyTargetCategory ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ana:alignmentCuratedCategory ],
+        [ sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ana:alignmentSource ] ;
+    sh:targetClass ana:TargetCategoryAlignmentAssertion .
+
+cdsg:ExplicitTargetCategoryDefinitionShape a sh:NodeShape ;
+    sh:property [ sh:class cdsg:SourceDefinedPolicyTargetCategory ;
+            sh:maxCount 1 ;
+            sh:message "A source criterion statement must specify exactly one source-specified target category of the appropriate kind."@en ;
+            sh:minCount 1 ;
+            sh:path cdsg:definesTargetCategory ],
+        [ sh:class cdsg:Jurisdiction ;
+            sh:minCount 1 ;
+            sh:path cdsg:appliesInJurisdiction ],
+        [ sh:class cdsg:EvidenceRecord ;
+            sh:minCount 1 ;
+            sh:path cdsg:hasSourceEvidence ],
+        [ sh:class cdsg:PolicyDocument ;
+            sh:minCount 1 ;
+            sh:path cdsg:isExpressedIn ],
+        [ sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:path cdsg:sourceStatementText ] ;
+    sh:targetClass cdsg:ExplicitTargetCategoryDefinition .
+
+cdsg:TargetCategoryConstitutionRuleShape a sh:NodeShape ;
+    sh:property [ sh:class cdsg:Jurisdiction ;
+            sh:minCount 1 ;
+            sh:path cdsg:appliesInJurisdiction ],
+        [ sh:class cdsg:NormativelyConstitutedPolicyTargetCategory ;
+            sh:maxCount 1 ;
+            sh:message "A source criterion statement must specify exactly one source-specified target category of the appropriate kind."@en ;
+            sh:minCount 1 ;
+            sh:path cdsg:constitutesTargetCategory ],
+        [ sh:class cdsg:EvidenceRecord ;
+            sh:minCount 1 ;
+            sh:path cdsg:hasSourceEvidence ],
+        [ sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:path cdsg:sourceStatementText ],
+        [ sh:class cdsg:PolicyDocument ;
+            sh:minCount 1 ;
+            sh:path cdsg:isExpressedIn ] ;
+    sh:targetClass cdsg:TargetCategoryConstitutionRule .
+
+cdsg:TargetCategoryOperationalizationShape a sh:NodeShape ;
+    sh:property [ sh:class cdsg:EvidenceRecord ;
+            sh:minCount 1 ;
+            sh:path cdsg:hasSourceEvidence ],
+        [ sh:class cdsg:Jurisdiction ;
+            sh:minCount 1 ;
+            sh:path cdsg:appliesInJurisdiction ],
+        [ sh:minCount 1 ;
+            sh:nodeKind sh:Literal ;
+            sh:path cdsg:sourceStatementText ],
+        [ sh:class cdsg:OperationalizedPolicyTargetCategory ;
+            sh:maxCount 1 ;
+            sh:message "A source criterion statement must specify exactly one source-specified target category of the appropriate kind."@en ;
+            sh:minCount 1 ;
+            sh:path cdsg:operationalizesTargetCategory ],
+        [ sh:class cdsg:PolicyDocument ;
+            sh:minCount 1 ;
+            sh:path cdsg:isExpressedIn ] ;
+    sh:targetClass cdsg:TargetCategoryOperationalization .
+
+<https://w3id.org/cdsg/shapes/target/CuratedCategoryAssessedShape> a sh:NodeShape ;
+    sh:property [ sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path [ sh:inversePath ana:assessesCuratedCategory ] ] ;
+    sh:targetClass ana:CuratedPolicyTargetCategory .
+
+<https://w3id.org/cdsg/shapes/target/TargetCategorySourcingAssessmentShape> a sh:NodeShape ;
+    sh:property [ sh:class ana:CuratedPolicyTargetCategory ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ana:assessesCuratedCategory ],
+        [ sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ana:sourcingOutcome ],
+        [ sh:datatype xsd:dateTime ;
+            sh:maxCount 1 ;
+            sh:minCount 1 ;
+            sh:path ana:assessmentReferenceDate ],
+        [ sh:maxCount 1 ;
+            sh:path ana:validityAtReferenceDate ] ;
+    sh:targetClass ana:TargetCategorySourcingAssessment .
+
+<https://w3id.org/cdsg/shapes/target/> a owl:Ontology ;
+    owl:versionIRI <https://w3id.org/cdsg/shapes/target/1.0.0-rc.2> ;
+    owl:versionInfo "1.0.0-rc.2" .
+

@@ -1,0 +1,5 @@
+@prefix cdsg: <https://w3id.org/cdsg/core#> .
+@prefix ana: <https://w3id.org/cdsg/analytics#> .
+@prefix ex: <https://w3id.org/cdsg/test/> .
+# NT05: a category cannot be both research-curated (semi-rigid) and source-specified (anti-rigid)
+ex:badCategory a ana:CuratedPolicyTargetCategory, cdsg:SourceSpecifiedPolicyTargetCategory .

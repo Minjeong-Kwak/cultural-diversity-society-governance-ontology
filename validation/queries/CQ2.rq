@@ -1,0 +1,14 @@
+# CQ2 For each curated category, in what state is the source specifying its membership at the reference date?
+# Retrieves: sourcing outcome, validity at the reference date, number of categories, ending document and end date where the source lapsed.
+PREFIX cdsg: <https://w3id.org/cdsg/core#>
+PREFIX ana: <https://w3id.org/cdsg/analytics#>
+PREFIX time: <http://www.w3.org/2006/time#>
+SELECT ?outcome ?validity (COUNT(DISTINCT ?assessment) AS ?categories)
+       (GROUP_CONCAT(DISTINCT STR(?endedBy); separator=" ") AS ?endedByDocuments)
+       (GROUP_CONCAT(DISTINCT STR(?end); separator=" ") AS ?endDates) WHERE {
+  ?assessment a ana:TargetCategorySourcingAssessment ; ana:sourcingOutcome ?outcome .
+  OPTIONAL { ?assessment ana:validityAtReferenceDate ?validity }
+  OPTIONAL { ?assessment ana:assessmentBasis ?period .
+             ?period a cdsg:NormativeEffectivePeriodAssertion ; cdsg:periodEndedByNormativeDocument ?endedBy ;
+                     cdsg:hasTemporalInterval/time:hasEnd/time:inXSDDateTime ?end . }
+} GROUP BY ?outcome ?validity ORDER BY ?outcome ?validity

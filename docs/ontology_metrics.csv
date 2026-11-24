@@ -1,0 +1,6 @@
+module,file,triples,cdsg_owl_classes,object_properties,datatype_properties,ontologies,resource_individuals,skos_concepts,sha256
+core,cdsg_core_v1.0.0-rc.2.ttl,791,39,37,14,1,0,0,4b028ac97355fffd572d88490d10dc8183cde6b32cc5a9a00997bc6f3182cce0
+analytics,cdsg_analytics_v1.0.0-rc.2.ttl,95,3,10,1,1,0,0,a7f3c64c295b2b6b307dcc51c3a849a2f6019df5d01b53bd11e133addb115ed0
+vocab,cdsg_vocab_v1.0.0-rc.2.ttl,200,0,0,0,1,0,55,b6e454dd5216b24efa29247583197d1c5915acb97d1529d4f4e92856303723ff
+data,cdsg_data_v1.0.0-rc.2.ttl,5616,260,0,0,1,815,0,0398ae802a78ed2eb14d791d39943c925a6f2d4667156487c4cd16af2abfc450
+active_merged,cdsg_v1.0.0-rc.2_active_merged.ttl,6690,302,47,15,4,815,55,793f9a411dd8a22ed361c3b7fd35076a5ad53252fb1249c1d209a6394a20e9d4

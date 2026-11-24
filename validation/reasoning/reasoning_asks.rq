@@ -1,0 +1,18 @@
+PREFIX cdsg: <https://w3id.org/cdsg/core#>
+PREFIX gufo: <http://purl.org/nemo/gufo#>
+PREFIX ex: <https://w3id.org/cdsg/test/>
+# Run over results/positive-fixture-inferred.ttl. check_reasoning_fixture.py evaluates the same expectations.
+# IT01 TRUE
+ASK { ex:org1 a cdsg:DocumentIssuerRole }
+# IT02 TRUE
+ASK { ex:post1 a cdsg:DocumentPublisherRole }
+# IT03 TRUE
+ASK { ex:cat1 a cdsg:NormativelyDefinedPolicyTargetCategory }
+# IT05 TRUE
+ASK { ex:cat2 a cdsg:SourceSpecifiedPolicyTargetCategory , gufo:RoleMixin }
+# NT03 FALSE
+ASK { ex:post1 a cdsg:Organization }
+# IT06 TRUE
+ASK { ex:bearer1 a gufo:Endurant }
+# NT06 FALSE
+ASK { ex:bearer1 a cdsg:PolicyTargetRole }

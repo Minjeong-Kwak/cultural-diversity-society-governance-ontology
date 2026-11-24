@@ -1,0 +1,5 @@
+@prefix cdsg: <https://w3id.org/cdsg/core#> .
+@prefix ex: <https://w3id.org/cdsg/test/> .
+ex:twoStatementCategory a cdsg:PolicyTargetCategory .
+ex:defStatement a cdsg:ExplicitTargetCategoryDefinition ; cdsg:definesTargetCategory ex:twoStatementCategory .
+ex:opStatement a cdsg:TargetCategoryOperationalization ; cdsg:operationalizesTargetCategory ex:twoStatementCategory .

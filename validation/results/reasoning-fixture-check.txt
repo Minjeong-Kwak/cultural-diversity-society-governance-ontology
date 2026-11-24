@@ -1,0 +1,14 @@
+PASS IT01 org1 a DocumentIssuerRole expected True got True
+PASS IT02 post1 a DocumentPublisherRole expected True got True
+PASS IT03 cat1 a NormativelyDefinedPolicyTargetCategory expected True got True
+PASS IT05a cat2 a NormativelyDefinedPolicyTargetCategory expected True got True
+PASS IT05b cat2 a SourceSpecifiedPolicyTargetCategory expected True got True
+PASS IT05c cat2 a RoleMixin expected True got True
+PASS NT03 post1 a Organization expected False got False
+PASS IT06 bearer1 a Endurant expected True got True
+PASS NT06 bearer1 a PolicyTargetRole expected False got False
+PASS DS01 18 subtype assertions of rc.1 reproduced by inference from statement links alone; missing 0
+PASS DS02 18 categories inferred source-specified; 0 asserted
+PASS DS03 all 18 source-specified categories inferred gufo:RoleMixin
+PASS DS04 all 242 curated categories inferred gufo:Mixin
+PASS NT04 no category is both curated and source-specified after reasoning (0)
