@@ -13,7 +13,7 @@ All validation gates have been executed for rc.2; logs are in `validation/result
 - [x] pySHACL 0.40.1 over the CDSG shapes
 - [x] pySHACL 0.40.1 over the vendored gUFO shapes, asserted and with HermiT class assertions
 - [x] gUFO and gUFO shapes vendored and pinned to upstream commits
-- [x] CQ1–CQ4 checked against expectations from the source analysis and against regression digests
+- [x] CQ1–CQ5 checked against expectations from the source analysis and against regression digests
 - [x] w3id redirect rules checked against package files
 - [x] Checksum manifest regenerated and verified
 

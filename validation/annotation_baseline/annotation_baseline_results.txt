@@ -1,0 +1,5 @@
+CQ1 reference rows 18, baseline rows 18, rows equal on all columns except the statement column: 18; statement column available in baseline: no
+CQ3 reference rows 21, baseline rows 21, correct rows 17, spurious rows 4, missing rows 4
+CQ5 reference rows 17, baseline rows 17, equal rows 17
+CQ4 reference statements 24, baseline carriers 18
+CQ2 reference rows 5, baseline rows 5, equal rows 5

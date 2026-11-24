@@ -1,0 +1,14 @@
+# CQ5 Which curated categories of one comparison facet exist in each jurisdiction, and in what state is the source specifying each?
+# Retrieves: jurisdiction, curated category, sourcing outcome, validity at the reference date.
+PREFIX cdsg: <https://w3id.org/cdsg/core#>
+PREFIX ana: <https://w3id.org/cdsg/analytics#>
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?jurisdiction ?curated ?label ?outcome ?validity WHERE {
+  ?curated a ana:CuratedPolicyTargetCategory ;
+           ana:hasTargetCategoryFacet <https://w3id.org/cdsg/vocab#target-facet/foreign-national-population> ;
+           rdfs:label ?label .
+  FILTER(LANG(?label) = "en" || LANG(?label) = "")
+  ?assessment a ana:TargetCategorySourcingAssessment ; ana:assessesCuratedCategory ?curated ; ana:sourcingOutcome ?outcome .
+  OPTIONAL { ?assessment ana:validityAtReferenceDate ?validity }
+  BIND(STRBEFORE(STRAFTER(STR(?curated), "/resource/"), "/") AS ?jurisdiction)
+} ORDER BY ?jurisdiction ?curated

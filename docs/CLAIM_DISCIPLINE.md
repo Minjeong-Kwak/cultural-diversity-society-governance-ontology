@@ -8,7 +8,7 @@ The rc.2 release supports precise claims about the formal artifact and about the
 - The data module is an evidence set: 18 source-specified categories, the source statements that specify them, the 242 curated comparison categories and their alignments, the documents, versions, actors and evidence records these rest on. Every evidence record supports one claim and carries a verbatim excerpt with either a file name and page or a web address and retrieval date.
 - The merged graph is in the OWL 2 DL profile and consistent under HermiT (ROBOT 1.9.10); four inconsistency fixtures are reported inconsistent and the positive and non-entailment fixtures pass.
 - The merged graph conforms to the CDSG shapes and to the vendored gUFO shapes under pySHACL 0.40.1, with and without the class assertions HermiT derives.
-- The four competency questions CQ1–CQ4 return the answers fixed in advance from the source analysis, and their normalized results match stored SHA-256 digests. CQ1 needs the HermiT class assertions; the others run over the asserted graph.
+- The five competency questions CQ1–CQ5 return the answers fixed in advance from the source analysis, and their normalized results match stored SHA-256 digests. CQ1 needs the HermiT class assertions; the others run over the asserted graph. A flat annotation-model baseline (`validation/annotation_baseline/`) answers CQ1–CQ5 from a model without statement, alignment or evidence individuals; it is a comparison, not a validation of the model.
 
 ## Claims that the results do not support
 

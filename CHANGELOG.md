@@ -2,6 +2,7 @@
 
 ## v1.0.0-rc.2 — 2026-10-12
 
+- Added CQ5 (curated categories of one comparison facet by jurisdiction with sourcing outcome and validity) with its expectation, regression digest and result file, and a flat annotation-model baseline for CQ1–CQ5 under `validation/annotation_baseline/`. No ontology or data file changed.
 - Repaired the inconsistency of the rc.1 active graph: `sourceInclusionText`, `evidenceText` and `sourceStatementText` had range `xsd:string` while their values carry language tags (4,261 values). Ranges are now `rdfs:Literal`. HermiT now reports the release consistent.
 - Narrowed the data module to the evidence set for the source-statement and target-category argument. rc.1 policy-measure, status, outcome, indicator, observation and actor data are not part of rc.2.
 - Quarantined two `invalid-legacy-link` alignments and the alignment from the Equality Act definition of race to a curated population category; resolved three `needs-review` alignments (two `related`, one `broader-than-curated`); removed the curated category left without alignment.

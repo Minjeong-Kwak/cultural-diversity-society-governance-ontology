@@ -225,5 +225,64 @@
       ],
       "entailment": "none"
     }
+  },
+  "CQ5": {
+    "expected": {
+      "basis": "Source analysis of the curated categories carrying the foreign-national-population comparison facet: 17 categories, of which 12 have no identified source statement, 3 have membership specified (Germany 1, France 2) and 2 have related source categories only (Japan 2).",
+      "rows": 17,
+      "checks": [
+        {
+          "where": {
+            "outcome": "no-source-statement-identified"
+          },
+          "rows": 12
+        },
+        {
+          "where": {
+            "outcome": "membership-specified"
+          },
+          "rows": 3
+        },
+        {
+          "where": {
+            "outcome": "related-source-category-only"
+          },
+          "rows": 2
+        },
+        {
+          "where": {
+            "outcome": "membership-specified",
+            "jurisdiction": "de"
+          },
+          "rows": 1
+        },
+        {
+          "where": {
+            "outcome": "membership-specified",
+            "jurisdiction": "fr"
+          },
+          "rows": 2
+        },
+        {
+          "where": {
+            "outcome": "related-source-category-only",
+            "jurisdiction": "jp"
+          },
+          "rows": 2
+        }
+      ]
+    },
+    "regression": {
+      "rows": 17,
+      "normalized_sha256": "44343961ee8e71bf271850be5572cf6039e98850bdf646f54df80e5f50d4f3b6",
+      "variables": [
+        "jurisdiction",
+        "curated",
+        "label",
+        "outcome",
+        "validity"
+      ],
+      "entailment": "none"
+    }
   }
 }

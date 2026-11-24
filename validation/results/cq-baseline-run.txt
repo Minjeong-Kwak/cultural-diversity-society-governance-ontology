@@ -2,3 +2,4 @@ PASS CQ1 expectation; PASS regression; rows= 18 (without entailment: 0) sha256= 
 PASS CQ2 expectation; PASS regression; rows= 5  sha256= b2b5d0b20e211820e9468e34b0bb1a6c85c901b3e8a9a19050aa1e5a21dbe294
 PASS CQ3 expectation; PASS regression; rows= 21  sha256= 5547e1fb51b853d83f6626edd8ea31d7195acc4d3b36a99f3f4278070b622a07
 PASS CQ4 expectation; PASS regression; rows= 24  sha256= b4207ee7ca66d68cfb9a78bc5977e71add9c51933abdd6b0fff03eec9531568a
+PASS CQ5 expectation; PASS regression; rows= 17  sha256= 44343961ee8e71bf271850be5572cf6039e98850bdf646f54df80e5f50d4f3b6

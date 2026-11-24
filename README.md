@@ -39,7 +39,7 @@ The release imports **gUFO 1.0.0 only**, vendored at `validation/external/gufo.o
 
 ## Validation
 
-See `validation/cdsg_v1rc2_quality_report.md`. In short: OWL 2 DL profile, HermiT consistency and classification, positive-inference, non-entailment and inconsistency fixtures, classification of the evidence set, pySHACL over the CDSG and gUFO shapes, the structural audit and four competency questions all pass on rc.2. `validation/cq_matrix.csv` lists each CQ with the requirement it tests, its task, whether it needs reasoning, the expected answer and where that expectation comes from.
+See `validation/cdsg_v1rc2_quality_report.md`. In short: OWL 2 DL profile, HermiT consistency and classification, positive-inference, non-entailment and inconsistency fixtures, classification of the evidence set, pySHACL over the CDSG and gUFO shapes, the structural audit and five competency questions all pass on rc.2. `validation/cq_matrix.csv` lists each CQ with the requirement it tests, its task, whether it needs reasoning, the expected answer and where that expectation comes from.
 
 To reproduce, from the package root:
 

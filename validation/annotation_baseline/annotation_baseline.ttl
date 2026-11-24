@@ -1,0 +1,771 @@
+@prefix ns1: <urn:baseline#> .
+
+<https://w3id.org/cdsg/resource/au/ChildOrYouthWithMigrationBackgroundPopulation_7d705d97> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/au/ConstitutedPolicyTarget_27d985e1> ns1:alignEvidence <https://w3id.org/cdsg/resource/evidence/SourceEvidence_101bb5ea>,
+        <https://w3id.org/cdsg/resource/evidence/SourceEvidence_47986993> ;
+    ns1:alignRelation "https://w3id.org/cdsg/vocab#target-alignment/related" ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/context-statement-only" .
+
+<https://w3id.org/cdsg/resource/au/EthnicMinorityPopulation_7ea30510> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/au/EthnicMinorityPopulation_90b400d7> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/au/EthnicMinorityPopulation_ab162b43> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/au/EthnicMinorityPopulation_d4ac1bbd> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/au/HostSocietyPopulation_31c5efe5> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/au/ImmigrationSystemTarget_09471195> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/au/IndigenousPopulation_bb0aaf70> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/au/MigrantPopulation_f2ea034d> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/au/OrganizationTarget_02ace03b> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/au/OrganizationTarget_062ef8a8> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/au/PopulationGroupTarget_49e721e7> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/au/PublicSectorOrganizationTarget_55d5e29d> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/au/PublicServiceSystemTarget_1093f5be> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/au/PublicServiceSystemTarget_290a69c8> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/au/PublicServiceSystemTarget_68c93bf6> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/au/PublicServiceSystemTarget_7a428e12> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/au/PublicServiceSystemTarget_8fe18d62> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/au/PublicServiceSystemTarget_a024a8fc> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/au/PublicServiceSystemTarget_ac331ae9> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/au/PublicServiceSystemTarget_f7015cb5> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/au/RefugeeOrAsylumSeekerPopulation_d5d67457> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/CommunityTarget_309e1bb3> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/CommunityTarget_c8a7489b> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/ConstitutedPolicyTarget_3ee0f5f9> ns1:alignEvidence <https://w3id.org/cdsg/resource/evidence/SourceEvidence_2719e747>,
+        <https://w3id.org/cdsg/resource/evidence/SourceEvidence_402fb31b>,
+        <https://w3id.org/cdsg/resource/evidence/SourceEvidence_f2fced91> ;
+    ns1:alignRelation "https://w3id.org/cdsg/vocab#target-alignment/broader-than-curated",
+        "https://w3id.org/cdsg/vocab#target-alignment/narrower-than-curated",
+        "https://w3id.org/cdsg/vocab#target-alignment/related" ;
+    ns1:alignSource <https://w3id.org/cdsg/resource/target/source/category-c224e635>,
+        <https://w3id.org/cdsg/resource/target/source/category-dd6fa091> ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/related-source-category-only" ;
+    ns1:validity2 "https://w3id.org/cdsg/vocab#source-validity/not-assessed" .
+
+<https://w3id.org/cdsg/resource/ca/ConstitutedPolicyTarget_afc0971c> ns1:alignEvidence <https://w3id.org/cdsg/resource/evidence/SourceEvidence_e0fe0bb1> ;
+    ns1:alignRelation "https://w3id.org/cdsg/vocab#target-alignment/close" ;
+    ns1:alignSource <https://w3id.org/cdsg/resource/target/source/category-ee4f68c7> ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/membership-specified" ;
+    ns1:validity2 "https://w3id.org/cdsg/vocab#source-validity/in-force" .
+
+<https://w3id.org/cdsg/resource/ca/HostSocietyPopulation_ca1b53fd> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/ImmigrationSystemTarget_fbe89d82> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/MigrantPopulation_37edf838> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/OrganizationTarget_301d79f7> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/OrganizationTarget_3266b908> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/OrganizationTarget_8b3b0f5c> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/PopulationGroupTarget_1a928b7f> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/PopulationGroupTarget_518540f0> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/PopulationGroupTarget_863b6564> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/PopulationGroupTarget_91f68b58> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/PopulationGroupTarget_a3175ebb> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/PopulationGroupTarget_bf39f81b> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/PublicSectorOrganizationTarget_019d7137> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/PublicServiceSystemTarget_0120dfc5> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/PublicServiceSystemTarget_a854a153> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/PublicServiceSystemTarget_c19fe413> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/PublicServiceSystemTarget_c551e02c> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/RacializedPopulation_7e6c2d79> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/RacializedPopulation_caed9cef> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/RacializedPopulation_e133be3b> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/RefugeeOrAsylumSeekerPopulation_019eaa3f> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/ReligiousMinorityPopulation_4eda90e7> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/ReligiousMinorityPopulation_706acd9a> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/ca/ReligiousMinorityPopulation_d64c1138> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/CommunityTarget_d528893b> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/ConstitutedPolicyTarget_0a50cf91> ns1:alignEvidence <https://w3id.org/cdsg/resource/evidence/SourceEvidence_a82ed688> ;
+    ns1:alignRelation "https://w3id.org/cdsg/vocab#target-alignment/close" ;
+    ns1:alignSource <https://w3id.org/cdsg/resource/target/source/category-8e52d503> ;
+    ns1:facet "foreign-national-population" ;
+    ns1:jurisdiction "de" ;
+    ns1:outcome "https://w3id.org/cdsg/vocab#sourcing-outcome/membership-specified" ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/membership-specified" ;
+    ns1:validity "https://w3id.org/cdsg/vocab#source-validity/in-force" ;
+    ns1:validity2 "https://w3id.org/cdsg/vocab#source-validity/in-force" .
+
+<https://w3id.org/cdsg/resource/de/ConstitutedPolicyTarget_661bd7a5> ns1:alignEvidence <https://w3id.org/cdsg/resource/evidence/SourceEvidence_07841f3d>,
+        <https://w3id.org/cdsg/resource/evidence/SourceEvidence_277b4f39> ;
+    ns1:alignRelation "https://w3id.org/cdsg/vocab#target-alignment/close" ;
+    ns1:alignSource <https://w3id.org/cdsg/resource/target/source/category-1ddcfa9a>,
+        <https://w3id.org/cdsg/resource/target/source/category-d0619146> ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/membership-specified" ;
+    ns1:validity2 "https://w3id.org/cdsg/vocab#source-validity/in-force" .
+
+<https://w3id.org/cdsg/resource/de/ConstitutedPolicyTarget_697c28d3> ns1:alignEvidence <https://w3id.org/cdsg/resource/evidence/SourceEvidence_3ad6b3f3> ;
+    ns1:alignRelation "https://w3id.org/cdsg/vocab#target-alignment/close" ;
+    ns1:alignSource <https://w3id.org/cdsg/resource/target/source/category-122140b8> ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/membership-specified" ;
+    ns1:validity2 "https://w3id.org/cdsg/vocab#source-validity/in-force" .
+
+<https://w3id.org/cdsg/resource/de/FamilyOrHouseholdTarget_2dd131d7> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/ForeignNationalPopulation_56a04fed> ns1:facet "foreign-national-population" ;
+    ns1:jurisdiction "de" ;
+    ns1:outcome "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/ForeignNationalPopulation_7262b931> ns1:facet "foreign-national-population" ;
+    ns1:jurisdiction "de" ;
+    ns1:outcome "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/HostSocietyPopulation_61189c9c> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/ImmigrationSystemTarget_7e9e90e6> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/InternationalStudentPopulation_24999db8> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/MigrantPopulation_0bc0d8dd> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/MigrantPopulation_0f55f706> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/MigrantPopulation_4b9509e2> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/MigrantPopulation_5ac884f3> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/MigrantPopulation_8a6ed30f> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/MigrantWorkerPopulation_2a42ab1c> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/MigrantWorkerPopulation_428d5afa> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/NaturalizedCitizenPopulation_08a7a122> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/OrganizationTarget_1957dae1> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/OrganizationTarget_32b3c437> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/OrganizationTarget_5d4867fa> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/PopulationGroupTarget_357b9596> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/PopulationGroupTarget_4da8fccd> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/PopulationGroupTarget_51b5a636> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/PopulationGroupTarget_65d9dee5> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/PopulationGroupTarget_75399746> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/PopulationGroupTarget_88cdd9c9> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/PopulationGroupTarget_8a2ff002> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/PopulationGroupTarget_98ee3beb> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/PopulationGroupTarget_ac8c8c18> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/PopulationGroupTarget_f0014af3> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/PublicSectorOrganizationTarget_5d02c6c9> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/PublicSectorOrganizationTarget_b175bac6> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/PublicSectorOrganizationTarget_c0fc5b82> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/PublicServiceSystemTarget_01160251> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/PublicServiceSystemTarget_457d8e55> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/PublicServiceSystemTarget_58f65a2c> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/PublicServiceSystemTarget_a04f9908> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/PublicServiceSystemTarget_a22a99b0> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/PublicServiceSystemTarget_ab00eaf3> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/RefugeeOrAsylumSeekerPopulation_361a985a> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/RefugeeOrAsylumSeekerPopulation_4d7157f6> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/RefugeeOrAsylumSeekerPopulation_77bc6c7e> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/RefugeeOrAsylumSeekerPopulation_7c21df03> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/RefugeeOrAsylumSeekerPopulation_8444f42d> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/RefugeeOrAsylumSeekerPopulation_ab33c415> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/de/RefugeeOrAsylumSeekerPopulation_ba9a3cf2> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/ChildOrYouthWithMigrationBackgroundPopulation_bd69bf92> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/CommunityTarget_a30c5638> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/ConstitutedPolicyTarget_230694b4> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/ConstitutedPolicyTarget_236fe00e> ns1:alignEvidence <https://w3id.org/cdsg/resource/evidence/SourceEvidence_c2dc2e8b> ;
+    ns1:alignRelation "https://w3id.org/cdsg/vocab#target-alignment/close" ;
+    ns1:alignSource <https://w3id.org/cdsg/resource/target/source/category-b02a5ef0> ;
+    ns1:facet "foreign-national-population" ;
+    ns1:jurisdiction "fr" ;
+    ns1:outcome "https://w3id.org/cdsg/vocab#sourcing-outcome/membership-specified" ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/membership-specified" ;
+    ns1:validity "https://w3id.org/cdsg/vocab#source-validity/in-force" ;
+    ns1:validity2 "https://w3id.org/cdsg/vocab#source-validity/in-force" .
+
+<https://w3id.org/cdsg/resource/fr/ConstitutedPolicyTarget_2d409b5f> ns1:alignEvidence <https://w3id.org/cdsg/resource/evidence/SourceEvidence_545a8ae3> ;
+    ns1:alignRelation "https://w3id.org/cdsg/vocab#target-alignment/close" ;
+    ns1:alignSource <https://w3id.org/cdsg/resource/target/source/category-902bc5c6> ;
+    ns1:facet "foreign-national-population" ;
+    ns1:jurisdiction "fr" ;
+    ns1:outcome "https://w3id.org/cdsg/vocab#sourcing-outcome/membership-specified" ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/membership-specified" ;
+    ns1:validity "https://w3id.org/cdsg/vocab#source-validity/in-force" ;
+    ns1:validity2 "https://w3id.org/cdsg/vocab#source-validity/in-force" .
+
+<https://w3id.org/cdsg/resource/fr/ConstitutedPolicyTarget_b759a07d> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/EthnicMinorityPopulation_46018ced> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/FamilyOrHouseholdTarget_1645300d> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/ForeignNationalPopulation_7a119dc6> ns1:facet "foreign-national-population" ;
+    ns1:jurisdiction "fr" ;
+    ns1:outcome "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/ForeignNationalPopulation_d8e35888> ns1:facet "foreign-national-population" ;
+    ns1:jurisdiction "fr" ;
+    ns1:outcome "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/ForeignNationalPopulation_ed76fb79> ns1:facet "foreign-national-population" ;
+    ns1:jurisdiction "fr" ;
+    ns1:outcome "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/HostSocietyPopulation_1e16db20> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/ImmigrationSystemTarget_f85b4bd3> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/InternationalStudentPopulation_d8c18e43> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/MigrantPopulation_6617e08d> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/MigrantWorkerPopulation_32565f9b> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/MigrantWorkerPopulation_3dcf019c> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/MigrantWorkerPopulation_8fd9a84d> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/NaturalizedCitizenPopulation_d926cbfe> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/OrganizationTarget_036827f1> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/OrganizationTarget_318b8214> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/OrganizationTarget_534337a7> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/OrganizationTarget_76db1cb5> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/OrganizationTarget_784ff485> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/OrganizationTarget_7f83e55e> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/OrganizationTarget_886a2fa6> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/OrganizationTarget_b6d4653f> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/OrganizationTarget_c0403b67> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/OrganizationTarget_d7df1fc4> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/OrganizationTarget_ec99a0ee> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/PopulationGroupTarget_13f02843> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/PopulationGroupTarget_4bcd21df> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/PopulationGroupTarget_514bf2be> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/PopulationGroupTarget_8b8bb41f> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/PopulationGroupTarget_989ac83c> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/PopulationGroupTarget_c1526e5b> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/PublicSectorOrganizationTarget_00acd12a> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/PublicSectorOrganizationTarget_87c8ad6e> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/PublicServiceSystemTarget_51fe7b6d> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/RefugeeOrAsylumSeekerPopulation_12dbf406> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/RefugeeOrAsylumSeekerPopulation_1a7c020c> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/RefugeeOrAsylumSeekerPopulation_3ede072e> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/RefugeeOrAsylumSeekerPopulation_500015ee> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/RefugeeOrAsylumSeekerPopulation_eb40e41e> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/fr/ReligiousMinorityPopulation_c7b5045c> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/ChildOrYouthWithMigrationBackgroundPopulation_65d58a4a> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/CommunityTarget_590cf8ca> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/ConstitutedPolicyTarget_379a2101> ns1:alignEvidence <https://w3id.org/cdsg/resource/evidence/SourceEvidence_04ab95fc> ;
+    ns1:alignRelation "https://w3id.org/cdsg/vocab#target-alignment/related" ;
+    ns1:alignSource <https://w3id.org/cdsg/resource/target/source/category-d40cc683> ;
+    ns1:facet "foreign-national-population" ;
+    ns1:jurisdiction "jp" ;
+    ns1:outcome "https://w3id.org/cdsg/vocab#sourcing-outcome/related-source-category-only" ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/related-source-category-only" ;
+    ns1:validity "https://w3id.org/cdsg/vocab#source-validity/not-assessed" ;
+    ns1:validity2 "https://w3id.org/cdsg/vocab#source-validity/not-assessed" .
+
+<https://w3id.org/cdsg/resource/jp/ConstitutedPolicyTarget_599c0a49> ns1:alignEvidence <https://w3id.org/cdsg/resource/evidence/SourceEvidence_ca9cc9a6> ;
+    ns1:alignRelation "https://w3id.org/cdsg/vocab#target-alignment/related" ;
+    ns1:alignSource <https://w3id.org/cdsg/resource/target/source/category-b17fa6b6> ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/related-source-category-only" ;
+    ns1:validity2 "https://w3id.org/cdsg/vocab#source-validity/not-assessed" .
+
+<https://w3id.org/cdsg/resource/jp/ConstitutedPolicyTarget_72e8f1b1> ns1:alignEvidence <https://w3id.org/cdsg/resource/evidence/SourceEvidence_322185ed> ;
+    ns1:alignRelation "https://w3id.org/cdsg/vocab#target-alignment/narrower-than-curated" ;
+    ns1:alignSource <https://w3id.org/cdsg/resource/target/source/category-4c71322b> ;
+    ns1:facet "foreign-national-population" ;
+    ns1:jurisdiction "jp" ;
+    ns1:outcome "https://w3id.org/cdsg/vocab#sourcing-outcome/related-source-category-only" ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/related-source-category-only" ;
+    ns1:validity "https://w3id.org/cdsg/vocab#source-validity/not-assessed" ;
+    ns1:validity2 "https://w3id.org/cdsg/vocab#source-validity/not-assessed" .
+
+<https://w3id.org/cdsg/resource/jp/ForeignNationalPopulation_016fc766> ns1:facet "foreign-national-population" ;
+    ns1:jurisdiction "jp" ;
+    ns1:outcome "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/ForeignNationalPopulation_3695a3bd> ns1:facet "foreign-national-population" ;
+    ns1:jurisdiction "jp" ;
+    ns1:outcome "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/ForeignNationalPopulation_f3c4ba80> ns1:facet "foreign-national-population" ;
+    ns1:jurisdiction "jp" ;
+    ns1:outcome "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/HostSocietyPopulation_5e472b58> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/ImmigrationSystemTarget_acb7d9fc> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/InternationalStudentPopulation_04c3b220> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/MigrantPopulation_054e2a5f> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/MigrantPopulation_7212c287> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/MigrantWorkerPopulation_21f95177> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/MigrantWorkerPopulation_c45523c7> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/MigrantWorkerPopulation_eb930009> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/MulticulturalFamilyTarget_d6d39337> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/OrganizationTarget_2c40ed17> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/OrganizationTarget_a0218bb8> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/PopulationGroupTarget_174bbc25> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/PublicSectorOrganizationTarget_813fd0ac> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/PublicServiceSystemTarget_15a70059> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/PublicServiceSystemTarget_86160da2> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/PublicServiceSystemTarget_c6c50b0c> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/RefugeeOrAsylumSeekerPopulation_0f1130a1> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/jp/SystemTarget_c8b56d50> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/kr/ChildOrYouthWithMigrationBackgroundPopulation_622f1d0b> ns1:alignEvidence <https://w3id.org/cdsg/resource/evidence/SourceEvidence_0f99c144> ;
+    ns1:alignRelation "https://w3id.org/cdsg/vocab#target-alignment/broader-than-curated" ;
+    ns1:alignSource <https://w3id.org/cdsg/resource/target/source/category-b6df36bc> ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/related-source-category-only" ;
+    ns1:validity2 "https://w3id.org/cdsg/vocab#source-validity/not-assessed" .
+
+<https://w3id.org/cdsg/resource/kr/CommunityTarget_3f022991> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/kr/ConstitutedPolicyTarget_874660fd> ns1:alignEvidence <https://w3id.org/cdsg/resource/evidence/SourceEvidence_c7af388d> ;
+    ns1:alignRelation "https://w3id.org/cdsg/vocab#target-alignment/close" ;
+    ns1:alignSource <https://w3id.org/cdsg/resource/target/source/category-e836684f> ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/membership-specified" ;
+    ns1:validity2 "https://w3id.org/cdsg/vocab#source-validity/in-force" .
+
+<https://w3id.org/cdsg/resource/kr/ConstitutedPolicyTarget_9886b4a7> ns1:alignEvidence <https://w3id.org/cdsg/resource/evidence/SourceEvidence_45f5130b> ;
+    ns1:alignRelation "https://w3id.org/cdsg/vocab#target-alignment/broader-than-curated" ;
+    ns1:alignSource <https://w3id.org/cdsg/resource/target/source/category-2122a081> ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/related-source-category-only" ;
+    ns1:validity2 "https://w3id.org/cdsg/vocab#source-validity/not-assessed" .
+
+<https://w3id.org/cdsg/resource/kr/ConstitutedPolicyTarget_ccf545fd> ns1:alignEvidence <https://w3id.org/cdsg/resource/evidence/SourceEvidence_356412d5> ;
+    ns1:alignRelation "https://w3id.org/cdsg/vocab#target-alignment/close" ;
+    ns1:alignSource <https://w3id.org/cdsg/resource/target/source/category-b17f3313> ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/membership-specified" ;
+    ns1:validity2 "https://w3id.org/cdsg/vocab#source-validity/in-force" .
+
+<https://w3id.org/cdsg/resource/kr/ForeignNationalPopulation_0bacc80b> ns1:facet "foreign-national-population" ;
+    ns1:jurisdiction "kr" ;
+    ns1:outcome "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/kr/ForeignNationalPopulation_2382328a> ns1:facet "foreign-national-population" ;
+    ns1:jurisdiction "kr" ;
+    ns1:outcome "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/kr/ForeignNationalPopulation_7a304f49> ns1:facet "foreign-national-population" ;
+    ns1:jurisdiction "kr" ;
+    ns1:outcome "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/kr/ForeignNationalPopulation_d5ce1974> ns1:facet "foreign-national-population" ;
+    ns1:jurisdiction "kr" ;
+    ns1:outcome "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/kr/HostSocietyPopulation_8a306133> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/kr/ImmigrationSystemTarget_84d218fb> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/kr/InternationalStudentPopulation_0ee034dd> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/kr/MigrantPopulation_1b0aeca0> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/kr/MigrantPopulation_9ed07798> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/kr/MigrantPopulation_b9d70491> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/kr/MigrantWorkerPopulation_6c408b22> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/kr/MigrantWorkerPopulation_7e58185d> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/kr/MigrantWorkerPopulation_7f5f4f90> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/kr/MigrantWorkerPopulation_b9a5b850> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/kr/OrganizationTarget_203b9af3> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/kr/PublicSectorOrganizationTarget_bc5dd13f> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/kr/PublicServiceSystemTarget_1255266b> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/kr/RefugeeOrAsylumSeekerPopulation_b077abd3> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/target/source/category-f229de55> ns1:document <https://w3id.org/cdsg/resource/kr/Statute_9feedf13> ;
+    ns1:evidenceRecords "1" ;
+    ns1:h_inForceFrom "2022-10-01T00:00:00" ;
+    ns1:h_version "https://w3id.org/cdsg/resource/kr/NormativeDocumentVersion_9feedf13_20221001" ;
+    ns1:h_versionKind "https://w3id.org/cdsg/vocab#document-version-kind/consolidated-text" ;
+    ns1:jurisdiction "https://w3id.org/cdsg/resource/kr/NationalJurisdiction_22402ee6" ;
+    ns1:kind "https://w3id.org/cdsg/core#NormativelyConstitutedPolicyTargetCategory" ;
+    ns1:version "https://w3id.org/cdsg/resource/kr/NormativeDocumentVersion_9feedf13_20221001" .
+
+<https://w3id.org/cdsg/resource/uk/CommunityTarget_1c7f3613> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/CommunityTarget_46262822> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/CommunityTarget_487f7651> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/CommunityTarget_eca8cafb> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/ConstitutedPolicyTarget_661ab5c0> ns1:alignEvidence <https://w3id.org/cdsg/resource/evidence/SourceEvidence_7b5f9291> ;
+    ns1:alignRelation "https://w3id.org/cdsg/vocab#target-alignment/related" ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/context-statement-only" .
+
+<https://w3id.org/cdsg/resource/uk/EthnicMinorityPopulation_6f9d5929> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/HostSocietyPopulation_4345d367> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/ImmigrationSystemTarget_98f02967> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/MigrantPopulation_dc344afd> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/OrganizationTarget_0f340938> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/OrganizationTarget_12310fa8> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/OrganizationTarget_75abc382> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/OrganizationTarget_ad177aba> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/OrganizationTarget_b6c561ce> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/OrganizationTarget_cf542c58> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/OrganizationTarget_da5decba> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/OrganizationTarget_e6201b0a> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/PopulationGroupTarget_1333a60e> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/PopulationGroupTarget_26ffb8ec> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/PopulationGroupTarget_2ca3343f> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/PopulationGroupTarget_3dd40bb4> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/PopulationGroupTarget_5a0e0a26> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/PopulationGroupTarget_a2fb511e> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/PopulationGroupTarget_c82878c9> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/PopulationGroupTarget_e1eff03f> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/PublicSectorOrganizationTarget_0d423fbf> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/PublicServiceSystemTarget_4aef26a7> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/PublicServiceSystemTarget_c9caa3fd> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/RefugeeOrAsylumSeekerPopulation_3e3504ce> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/ReligiousMinorityPopulation_385c40fd> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/ReligiousMinorityPopulation_3aba3495> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/uk/ReligiousMinorityPopulation_a92edcd7> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/us/FederalContractorTarget_fcc3d064> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/us/HostSocietyPopulation_c99d8ac0> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/us/MigrantPopulation_a959985f> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/us/OrganizationTarget_187d63da> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/us/OrganizationTarget_2970912f> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/us/OrganizationTarget_2a0a270b> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/us/OrganizationTarget_54ff1b9b> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/us/OrganizationTarget_69d5128e> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/us/OrganizationTarget_97d0bcee> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/us/OrganizationTarget_9fcf90b4> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/us/OrganizationTarget_c66abee1> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/us/OrganizationTarget_fd2e873a> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/us/PopulationGroupTarget_130166fb> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/us/PopulationGroupTarget_3df9205d> ns1:alignEvidence <https://w3id.org/cdsg/resource/evidence/SourceEvidence_77baabab> ;
+    ns1:alignRelation "https://w3id.org/cdsg/vocab#target-alignment/close" ;
+    ns1:alignSource <https://w3id.org/cdsg/resource/target/source/category-e24c0eba> ;
+    ns1:end "2025-03-01T00:00:00" ;
+    ns1:endedBy "https://w3id.org/cdsg/resource/us/ExecutiveOrder_7b601959" ;
+    ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/membership-specified" ;
+    ns1:validity2 "https://w3id.org/cdsg/vocab#source-validity/no-longer-in-force" .
+
+<https://w3id.org/cdsg/resource/us/PublicSectorOrganizationTarget_a97577eb> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/us/PublicServiceSystemTarget_0692f531> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/us/PublicServiceSystemTarget_0c623074> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/us/PublicServiceSystemTarget_4ca1638d> ns1:outcome2 "https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified" .
+
+<https://w3id.org/cdsg/resource/target/source/category-122140b8> ns1:document <https://w3id.org/cdsg/resource/de/StatisticalStandardDocument_f0688c5b> ;
+    ns1:evidenceRecords "1" ;
+    ns1:jurisdiction "https://w3id.org/cdsg/resource/de/FederalJurisdiction_6f00bec8" ;
+    ns1:kind "https://w3id.org/cdsg/core#StatisticallyDefinedPolicyTargetCategory" .
+
+<https://w3id.org/cdsg/resource/target/source/category-1ddcfa9a> ns1:document <https://w3id.org/cdsg/resource/de/NormativeDocument_d86de7ff> ;
+    ns1:evidenceRecords "1" ;
+    ns1:h_inForceFrom "2010-10-13T00:00:00" ;
+    ns1:h_version "https://w3id.org/cdsg/resource/de/NormativeDocumentVersion_d86de7ff_20101013" ;
+    ns1:h_versionKind "https://w3id.org/cdsg/vocab#document-version-kind/consolidated-text" ;
+    ns1:jurisdiction "https://w3id.org/cdsg/resource/de/FederalJurisdiction_6f00bec8" ;
+    ns1:kind "https://w3id.org/cdsg/core#NormativelyDefinedPolicyTargetCategory" ;
+    ns1:version "https://w3id.org/cdsg/resource/de/NormativeDocumentVersion_d86de7ff_20101013" .
+
+<https://w3id.org/cdsg/resource/target/source/category-2122a081> ns1:document <https://w3id.org/cdsg/resource/kr/Statute_fc595eef> ;
+    ns1:evidenceRecords "1" ;
+    ns1:h_inForceFrom "2025-12-30T00:00:00" ;
+    ns1:h_version "https://w3id.org/cdsg/resource/kr/NormativeDocumentVersion_fc595eef_20251230" ;
+    ns1:h_versionKind "https://w3id.org/cdsg/vocab#document-version-kind/consolidated-text" ;
+    ns1:jurisdiction "https://w3id.org/cdsg/resource/kr/NationalJurisdiction_22402ee6" ;
+    ns1:kind "https://w3id.org/cdsg/core#NormativelyDefinedPolicyTargetCategory" ;
+    ns1:version "https://w3id.org/cdsg/resource/kr/NormativeDocumentVersion_fc595eef_20251230" .
+
+<https://w3id.org/cdsg/resource/target/source/category-4c71322b> ns1:document <https://w3id.org/cdsg/resource/jp/Statute_5e4b4c8b> ;
+    ns1:evidenceRecords "1" ;
+    ns1:h_inForceFrom "2026-06-14T00:00:00" ;
+    ns1:h_version "https://w3id.org/cdsg/resource/jp/NormativeDocumentVersion_5e4b4c8b_20260614" ;
+    ns1:h_versionKind "https://w3id.org/cdsg/vocab#document-version-kind/consolidated-text" ;
+    ns1:jurisdiction "https://w3id.org/cdsg/resource/jp/NationalJurisdiction_11e60c97" ;
+    ns1:kind "https://w3id.org/cdsg/core#NormativelyConstitutedPolicyTargetCategory" ;
+    ns1:version "https://w3id.org/cdsg/resource/jp/NormativeDocumentVersion_5e4b4c8b_20260614" .
+
+<https://w3id.org/cdsg/resource/target/source/category-8e52d503> ns1:document <https://w3id.org/cdsg/resource/de/Statute_9443fd91> ;
+    ns1:evidenceRecords "1" ;
+    ns1:h_version "https://w3id.org/cdsg/resource/de/NormativeDocumentVersion_9443fd91_lastamended20260722" ;
+    ns1:h_versionKind "https://w3id.org/cdsg/vocab#document-version-kind/consolidated-text" ;
+    ns1:jurisdiction "https://w3id.org/cdsg/resource/de/FederalJurisdiction_6f00bec8" ;
+    ns1:kind "https://w3id.org/cdsg/core#NormativelyDefinedPolicyTargetCategory" ;
+    ns1:version "https://w3id.org/cdsg/resource/de/NormativeDocumentVersion_9443fd91_lastamended20260722" .
+
+<https://w3id.org/cdsg/resource/target/source/category-902bc5c6> ns1:document <https://w3id.org/cdsg/resource/eu/NormativeDocument_9ad9fad1> ;
+    ns1:evidenceRecords "1" ;
+    ns1:h_inForceFrom "2024-06-11T00:00:00" ;
+    ns1:h_version "https://w3id.org/cdsg/resource/eu/NormativeDocumentVersion_9ad9fad1_20240611" ;
+    ns1:h_versionKind "https://w3id.org/cdsg/vocab#document-version-kind/original-text" ;
+    ns1:jurisdiction "https://w3id.org/cdsg/resource/jurisdiction/eu" ;
+    ns1:kind "https://w3id.org/cdsg/core#NormativelyDefinedPolicyTargetCategory" ;
+    ns1:version "https://w3id.org/cdsg/resource/eu/NormativeDocumentVersion_9ad9fad1_20240611" .
+
+<https://w3id.org/cdsg/resource/target/source/category-b02a5ef0> ns1:document <https://w3id.org/cdsg/resource/fr/Statute_06eec972> ;
+    ns1:evidenceRecords "1" ;
+    ns1:h_inForceFrom "2026-08-27T00:00:00" ;
+    ns1:h_version "https://w3id.org/cdsg/resource/fr/NormativeDocumentVersion_06eec972_20260827" ;
+    ns1:h_versionKind "https://w3id.org/cdsg/vocab#document-version-kind/consolidated-text" ;
+    ns1:jurisdiction "https://w3id.org/cdsg/resource/fr/NationalJurisdiction_c081b32c" ;
+    ns1:kind "https://w3id.org/cdsg/core#NormativelyDefinedPolicyTargetCategory" ;
+    ns1:version "https://w3id.org/cdsg/resource/fr/NormativeDocumentVersion_06eec972_20260827" .
+
+<https://w3id.org/cdsg/resource/target/source/category-b17f3313> ns1:document <https://w3id.org/cdsg/resource/kr/Statute_9feedf13> ;
+    ns1:evidenceRecords "1" ;
+    ns1:h_inForceFrom "2022-10-01T00:00:00" ;
+    ns1:h_version "https://w3id.org/cdsg/resource/kr/NormativeDocumentVersion_9feedf13_20221001" ;
+    ns1:h_versionKind "https://w3id.org/cdsg/vocab#document-version-kind/consolidated-text" ;
+    ns1:jurisdiction "https://w3id.org/cdsg/resource/kr/NationalJurisdiction_22402ee6" ;
+    ns1:kind "https://w3id.org/cdsg/core#NormativelyConstitutedPolicyTargetCategory" ;
+    ns1:version "https://w3id.org/cdsg/resource/kr/NormativeDocumentVersion_9feedf13_20221001" .
+
+<https://w3id.org/cdsg/resource/target/source/category-b17fa6b6> ns1:document <https://w3id.org/cdsg/resource/jp/Statute_eb4c53b7> ;
+    ns1:evidenceRecords "1" ;
+    ns1:h_inForceFrom "2023-12-01T00:00:00" ;
+    ns1:h_version "https://w3id.org/cdsg/resource/jp/NormativeDocumentVersion_eb4c53b7_20231201" ;
+    ns1:h_versionKind "https://w3id.org/cdsg/vocab#document-version-kind/consolidated-text" ;
+    ns1:jurisdiction "https://w3id.org/cdsg/resource/jp/NationalJurisdiction_11e60c97" ;
+    ns1:kind "https://w3id.org/cdsg/core#NormativelyDefinedPolicyTargetCategory" ;
+    ns1:version "https://w3id.org/cdsg/resource/jp/NormativeDocumentVersion_eb4c53b7_20231201" .
+
+<https://w3id.org/cdsg/resource/target/source/category-b6df36bc> ns1:document <https://w3id.org/cdsg/resource/kr/Statute_fc595eef> ;
+    ns1:evidenceRecords "1" ;
+    ns1:h_inForceFrom "2025-12-30T00:00:00" ;
+    ns1:h_version "https://w3id.org/cdsg/resource/kr/NormativeDocumentVersion_fc595eef_20251230" ;
+    ns1:h_versionKind "https://w3id.org/cdsg/vocab#document-version-kind/consolidated-text" ;
+    ns1:jurisdiction "https://w3id.org/cdsg/resource/kr/NationalJurisdiction_22402ee6" ;
+    ns1:kind "https://w3id.org/cdsg/core#NormativelyDefinedPolicyTargetCategory" ;
+    ns1:version "https://w3id.org/cdsg/resource/kr/NormativeDocumentVersion_fc595eef_20251230" .
+
+<https://w3id.org/cdsg/resource/target/source/category-c224e635> ns1:document <https://w3id.org/cdsg/resource/ca/Statute_c0d7710a> ;
+    ns1:evidenceRecords "1" ;
+    ns1:h_inForceFrom "2021-01-01T00:00:00" ;
+    ns1:h_version "https://w3id.org/cdsg/resource/ca/NormativeDocumentVersion_c0d7710a_20210101" ;
+    ns1:h_versionKind "https://w3id.org/cdsg/vocab#document-version-kind/consolidated-text" ;
+    ns1:jurisdiction "https://w3id.org/cdsg/resource/ca/FederalJurisdiction_1c75a772" ;
+    ns1:kind "https://w3id.org/cdsg/core#NormativelyDefinedPolicyTargetCategory" ;
+    ns1:version "https://w3id.org/cdsg/resource/ca/NormativeDocumentVersion_c0d7710a_20210101" .
+
+<https://w3id.org/cdsg/resource/target/source/category-d0619146> ns1:document <https://w3id.org/cdsg/resource/de/StatisticalStandardDocument_65fb5cf9> ;
+    ns1:evidenceRecords "1" ;
+    ns1:jurisdiction "https://w3id.org/cdsg/resource/de/FederalJurisdiction_6f00bec8" ;
+    ns1:kind "https://w3id.org/cdsg/core#OperationalizedPolicyTargetCategory" .
+
+<https://w3id.org/cdsg/resource/target/source/category-d40cc683> ns1:document <https://w3id.org/cdsg/resource/jp/Statute_d654d5c7> ;
+    ns1:evidenceRecords "1" ;
+    ns1:h_inForceFrom "2026-06-14T00:00:00" ;
+    ns1:h_version "https://w3id.org/cdsg/resource/jp/NormativeDocumentVersion_d654d5c7_20260614" ;
+    ns1:h_versionKind "https://w3id.org/cdsg/vocab#document-version-kind/consolidated-text" ;
+    ns1:jurisdiction "https://w3id.org/cdsg/resource/jp/NationalJurisdiction_11e60c97" ;
+    ns1:kind "https://w3id.org/cdsg/core#NormativelyDefinedPolicyTargetCategory" ;
+    ns1:version "https://w3id.org/cdsg/resource/jp/NormativeDocumentVersion_d654d5c7_20260614" .
+
+<https://w3id.org/cdsg/resource/target/source/category-dd6fa091> ns1:document <https://w3id.org/cdsg/resource/ca/Statute_c0d7710a> ;
+    ns1:evidenceRecords "1" ;
+    ns1:h_inForceFrom "2021-01-01T00:00:00" ;
+    ns1:h_version "https://w3id.org/cdsg/resource/ca/NormativeDocumentVersion_c0d7710a_20210101" ;
+    ns1:h_versionKind "https://w3id.org/cdsg/vocab#document-version-kind/consolidated-text" ;
+    ns1:jurisdiction "https://w3id.org/cdsg/resource/ca/FederalJurisdiction_1c75a772" ;
+    ns1:kind "https://w3id.org/cdsg/core#NormativelyDefinedPolicyTargetCategory" ;
+    ns1:version "https://w3id.org/cdsg/resource/ca/NormativeDocumentVersion_c0d7710a_20210101" .
+
+<https://w3id.org/cdsg/resource/target/source/category-e24c0eba> ns1:document <https://w3id.org/cdsg/resource/us/ExecutiveOrder_9fa6a443> ;
+    ns1:evidenceRecords "1" ;
+    ns1:h_change "revoked by" ;
+    ns1:h_changeDate "2025-03-01T00:00:00" ;
+    ns1:h_inForceFrom "2000-08-11T00:00:00" ;
+    ns1:h_otherDocument "https://w3id.org/cdsg/resource/us/ExecutiveOrder_7b601959" ;
+    ns1:h_version "https://w3id.org/cdsg/resource/us/NormativeDocumentVersion_9fa6a443_20000811" ;
+    ns1:h_versionKind "https://w3id.org/cdsg/vocab#document-version-kind/original-text" ;
+    ns1:jurisdiction "https://w3id.org/cdsg/resource/us/FederalJurisdiction_a460f181" ;
+    ns1:kind "https://w3id.org/cdsg/core#NormativelyDefinedPolicyTargetCategory" ;
+    ns1:version "https://w3id.org/cdsg/resource/us/NormativeDocumentVersion_9fa6a443_20000811" .
+
+<https://w3id.org/cdsg/resource/target/source/category-e836684f> ns1:document <https://w3id.org/cdsg/resource/kr/Statute_fc595eef> ;
+    ns1:evidenceRecords "1" ;
+    ns1:h_inForceFrom "2025-12-30T00:00:00" ;
+    ns1:h_version "https://w3id.org/cdsg/resource/kr/NormativeDocumentVersion_fc595eef_20251230" ;
+    ns1:h_versionKind "https://w3id.org/cdsg/vocab#document-version-kind/consolidated-text" ;
+    ns1:jurisdiction "https://w3id.org/cdsg/resource/kr/NationalJurisdiction_22402ee6" ;
+    ns1:kind "https://w3id.org/cdsg/core#NormativelyDefinedPolicyTargetCategory" ;
+    ns1:version "https://w3id.org/cdsg/resource/kr/NormativeDocumentVersion_fc595eef_20251230" .
+
+<https://w3id.org/cdsg/resource/target/source/category-ee4f68c7> ns1:document <https://w3id.org/cdsg/resource/ca/Statute_f9d70320> ;
+    ns1:evidenceRecords "1" ;
+    ns1:h_version "https://w3id.org/cdsg/resource/ca/NormativeDocumentVersion_f9d70320_20240101" ;
+    ns1:h_versionKind "https://w3id.org/cdsg/vocab#document-version-kind/consolidated-text" ;
+    ns1:jurisdiction "https://w3id.org/cdsg/resource/ca/FederalJurisdiction_1c75a772" ;
+    ns1:kind "https://w3id.org/cdsg/core#NormativelyDefinedPolicyTargetCategory" ;
+    ns1:version "https://w3id.org/cdsg/resource/ca/NormativeDocumentVersion_f9d70320_20240101" .
+

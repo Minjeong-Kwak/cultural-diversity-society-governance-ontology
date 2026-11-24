@@ -1,0 +1,18 @@
+jurisdiction,curated,label,outcome,validity
+de,https://w3id.org/cdsg/resource/de/ConstitutedPolicyTarget_0a50cf91,Foreign nationals in Germany,https://w3id.org/cdsg/vocab#sourcing-outcome/membership-specified,https://w3id.org/cdsg/vocab#source-validity/in-force
+de,https://w3id.org/cdsg/resource/de/ForeignNationalPopulation_56a04fed,People with tolerated stay status in Germany,https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified,
+de,https://w3id.org/cdsg/resource/de/ForeignNationalPopulation_7262b931,Kosovar citizens travelling for short stays in the Schengen area,https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified,
+fr,https://w3id.org/cdsg/resource/fr/ConstitutedPolicyTarget_236fe00e,Foreign nationals in France,https://w3id.org/cdsg/vocab#sourcing-outcome/membership-specified,https://w3id.org/cdsg/vocab#source-validity/in-force
+fr,https://w3id.org/cdsg/resource/fr/ConstitutedPolicyTarget_2d409b5f,Third-country nationals,https://w3id.org/cdsg/vocab#sourcing-outcome/membership-specified,https://w3id.org/cdsg/vocab#source-validity/in-force
+fr,https://w3id.org/cdsg/resource/fr/ForeignNationalPopulation_7a119dc6,Foreign nationals posing a threat to public order,https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified,
+fr,https://w3id.org/cdsg/resource/fr/ForeignNationalPopulation_d8e35888,Applicants for long-term residence in France,https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified,
+fr,https://w3id.org/cdsg/resource/fr/ForeignNationalPopulation_ed76fb79,Visa applicants,https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified,
+jp,https://w3id.org/cdsg/resource/jp/ConstitutedPolicyTarget_379a2101,Settled foreign residents in Japan,https://w3id.org/cdsg/vocab#sourcing-outcome/related-source-category-only,https://w3id.org/cdsg/vocab#source-validity/not-assessed
+jp,https://w3id.org/cdsg/resource/jp/ConstitutedPolicyTarget_72e8f1b1,Permanent residents in Japan,https://w3id.org/cdsg/vocab#sourcing-outcome/related-source-category-only,https://w3id.org/cdsg/vocab#source-validity/not-assessed
+jp,https://w3id.org/cdsg/resource/jp/ForeignNationalPopulation_016fc766,Irregular migrants and foreign nationals subject to deportation in Japan,https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified,
+jp,https://w3id.org/cdsg/resource/jp/ForeignNationalPopulation_3695a3bd,Foreign nationals in Japan,https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified,
+jp,https://w3id.org/cdsg/resource/jp/ForeignNationalPopulation_f3c4ba80,Short-term visitors and foreign tourists in Japan,https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified,
+kr,https://w3id.org/cdsg/resource/kr/ForeignNationalPopulation_0bacc80b,Short-term foreign visitors in the Republic of Korea,https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified,
+kr,https://w3id.org/cdsg/resource/kr/ForeignNationalPopulation_2382328a,Foreign residents in the Republic of Korea,https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified,
+kr,https://w3id.org/cdsg/resource/kr/ForeignNationalPopulation_7a304f49,Irregular migrants and overstayers in the Republic of Korea,https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified,
+kr,https://w3id.org/cdsg/resource/kr/ForeignNationalPopulation_d5ce1974,Long-term and permanent foreign residents in the Republic of Korea,https://w3id.org/cdsg/vocab#sourcing-outcome/no-source-statement-identified,
