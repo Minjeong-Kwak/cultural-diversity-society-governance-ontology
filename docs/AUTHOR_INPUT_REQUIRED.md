@@ -4,7 +4,7 @@ The release records what the files can show. The items marked open need the rese
 
 | # | Item | Status | Where it stands |
 |---|---|---|---|
-| 1 | Corpus boundary and selection criteria | partly resolved | The evidence set is the documents in the data folder of the project; `README.md` and `docs/CLAIM_DISCIPLINE.md` state that it is purposive and not exhaustive. Selection criteria and the collection period remain open. |
+| 1 | Corpus boundary and selection criteria | resolved | The evidence set is the documents in the data folder of the project; `README.md` and `docs/CLAIM_DISCIPLINE.md` state that it is purposive and not exhaustive. Selection criterion: the most recently revised multicultural-related policies of the countries covered. Collection period: 20 August 2026 to 10 September 2026. |
 | 2 | Exact source versions | resolved | Every statement in a normative document cites a `cdsg:NormativeDocumentVersion` with kind, identifier and in-force dates (CQ4). Publisher identifiers and URIs are recorded where the source prints them. |
 | 3 | Retrieval protocol | partly resolved | File-based evidence names the file and page; web evidence records the address and retrieval date (`cdsg:retrievedOn`). Replacement and revocation are recorded as supersession assertions and temporal qualifications (CQ4). Download dates of the PDF files remain open. |
 | 4 | Concept and relation extraction procedure | open | Who extracted, how many passes, adjudication. |
